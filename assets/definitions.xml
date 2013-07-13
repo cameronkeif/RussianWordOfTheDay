@@ -1,0 +1,1000 @@
+<definition word="и" definition="and, though" parts="conjunction" />
+<definition word="в" definition="in, at" parts="preposition" />
+<definition word="не" definition="not" parts="particle" />
+<definition word="он" definition="he" parts="pronoun" />
+<definition word="на" definition="on, it, at, to" parts="preposition" />
+<definition word="я" definition="I" parts="pronoun" />
+<definition word="что" definition="what, that, why сonjunction," parts="pronoun" />
+<definition word="тот" definition="that adjective," parts="pronoun" />
+<definition word="быть" definition="to be" parts="verb" />
+<definition word="с" definition="with, and, from, of" parts="preposition" />
+<definition word="а" definition="while, and, but" parts="conjunction" />
+<definition word="весь" definition="all, everything pron," parts="noun" />
+<definition word="это" definition="that, this, it" parts="pronoun" />
+<definition word="как" definition="how, what, as, like adverb," parts="conjunction" />
+<definition word="она" definition="she" parts="pronoun" />
+<definition word="по" definition="on, along, by" parts="preposition" />
+<definition word="но" definition="but conjunction," parts="noun" />
+<definition word="они" definition="they" parts="pronoun" />
+<definition word="к" definition="to, for, by" parts="preposition" />
+<definition word="у" definition="by, with, of" parts="preposition" />
+<definition word="ты" definition="you, thou" parts="pronoun" />
+<definition word="из" definition="from, of, in" parts="preposition" />
+<definition word="мы" definition="we" parts="pronoun" />
+<definition word="за" definition="behind, over, at, after" parts="preposition" />
+<definition word="вы" definition="you" parts="pronoun" />
+<definition word="так" definition="so, thus, then" parts="adverb" />
+<definition word="же" definition="and, as for, but, same conjunction," parts="particle" />
+<definition word="от" definition="from, of, for" parts="preposition" />
+<definition word="сказать" definition="to say, to speak" parts="verb" />
+<definition word="этот" definition="this" parts="pronoun" />
+<definition word="который" definition="which, who, that" parts="pronoun" />
+<definition word="мочь" definition="be able" parts="verb" />
+<definition word="человек" definition="man, person" parts="noun" />
+<definition word="о" definition="of, about, against" parts="preposition" />
+<definition word="один" definition="one, some, alone number," parts="cardinal pronoun" />
+<definition word="ещё" definition="still, yet" parts="adverb" />
+<definition word="бы" definition="would" parts="particle" />
+<definition word="такой" definition="such, so, some" parts="pronoun" />
+<definition word="только" definition="only, merely, but adverb," parts="conjunction" />
+<definition word="себя" definition="myself, himself, herself pron," parts="particle" />
+<definition word="своё" definition="one's own, my, our pronoun," parts="noun" />
+<definition word="какой" definition="what, which, how" parts="pronoun" />
+<definition word="когда" definition="when, while, as adverb," parts="conjunction" />
+<definition word="уже" definition="already, by now" parts="adverb" />
+<definition word="для" definition="for, to" parts="preposition" />
+<definition word="вот" definition="here, there, this is, that's" parts="particle" />
+<definition word="кто" definition="who, that, some" parts="pronoun" />
+<definition word="да" definition="yes, but conjunction," parts="particle" />
+<definition word="говорить" definition="to say, to tell, to speak" parts="verb" />
+<definition word="год" definition="year" parts="noun" />
+<definition word="знать" definition="to know, be aware" parts="verb" />
+<definition word="мой" definition="my, mine" parts="pronoun" />
+<definition word="до" definition="to, up to, about, before" parts="preposition" />
+<definition word="или" definition="or" parts="conjunction" />
+<definition word="если" definition="if" parts="conjunction" />
+<definition word="время" definition="time, season" parts="noun" />
+<definition word="рука" definition="hand, arm" parts="noun" />
+<definition word="нет" definition="no, not, but" parts="negation" />
+<definition word="самый" definition="most, the very, the same" parts="pronoun" />
+<definition word="ни" definition="not a, not, neither… nor conjunction," parts="particle" />
+<definition word="стать" definition="to become, begin, come" parts="verb" />
+<definition word="большой" definition="big, large, important" parts="adjective" />
+<definition word="даже" definition="even" parts="particle" />
+<definition word="другой" definition="other, another, different" parts="pronoun" />
+<definition word="наш" definition="our, ours" parts="pronoun" />
+<definition word="свой" definition="my, our, your" parts="pronoun" />
+<definition word="ну" definition="now, right, well, come on interj," parts="particle" />
+<definition word="под" definition="under, for, towards, to" parts="preposition" />
+<definition word="где" definition="where" parts="adverb" />
+<definition word="дело" definition="business, affair, matter" parts="noun" />
+<definition word="есть" definition="to eat, to be" parts="verb" />
+<definition word="сам" definition="myself, yourself" parts="pronoun" />
+<definition word="раз" definition="time, once, since noun," parts="adverb" />
+<definition word="чтобы" definition="that, in order that conjunction," parts="particle" />
+<definition word="два" definition="two" parts="cardinal number" />
+<definition word="там" definition="there, then" parts="adverb" />
+<definition word="чем" definition="than; instead of conjunction," parts="particle" />
+<definition word="глаз" definition="eye; sight" parts="noun" />
+<definition word="жизнь" definition="life" parts="noun" />
+<definition word="первый" definition="first, front, former adjective," parts="number" />
+<definition word="день" definition="day" parts="noun" />
+<definition word="тут" definition="here, now, then" parts="adverb" />
+<definition word="во" definition="in, at; super, exactly preposition," parts="particle" />
+<definition word="ничто" definition="nothing" parts="pronoun" />
+<definition word="потом" definition="afterwards, then" parts="adverb" />
+<definition word="очень" definition="very" parts="adverb" />
+<definition word="со" definition="with" parts="preposition" />
+<definition word="хотеть" definition="to want, like" parts="verb" />
+<definition word="ли" definition="whether, if conjunction," parts="particle" />
+<definition word="при" definition="attached to, in the presence of, by, about" parts="preposition" />
+<definition word="голова" definition="head, mind, brains" parts="noun" />
+<definition word="надо" definition="over, above, ought to prep," parts="verb" />
+<definition word="без" definition="without" parts="preposition" />
+<definition word="видеть" definition="to see" parts="verb" />
+<definition word="идти" definition="to go, come" parts="verb" />
+<definition word="теперь" definition="now, nowadays" parts="adverb" />
+<definition word="тоже" definition="also, as well, too" parts="adverb" />
+<definition word="стоять" definition="to stand, be, stand up" parts="verb" />
+<definition word="друг" definition="friend" parts="noun" />
+<definition word="дом" definition="house, home" parts="noun" />
+<definition word="сейчас" definition="now, presently, soon" parts="adverb" />
+<definition word="можно" definition="one can" parts="predicate" />
+<definition word="после" definition="after, afterwards" parts="preposition" />
+<definition word="слово" definition="word" parts="noun" />
+<definition word="здесь" definition="here" parts="adverb" />
+<definition word="думать" definition="to think; believe" parts="verb" />
+<definition word="место" definition="place; seat" parts="noun" />
+<definition word="спросить" definition="to ask" parts="verb" />
+<definition word="через" definition="through, across" parts="preposition" />
+<definition word="лицо" definition="face; person" parts="noun" />
+<definition word="что" definition="what, which, that" parts="pronoun" />
+<definition word="тогда" definition="then" parts="adverb" />
+<definition word="ведь" definition="you see, you know conj" parts="" />
+<definition word="хороший" definition="good, nice" parts="adjective" />
+<definition word="каждый" definition="each, every" parts="pronoun" />
+<definition word="новый" definition="new; modern" parts="adjective" />
+<definition word="жить" definition="to live" parts="verb" />
+<definition word="должный" definition="due, proper" parts="adjective" />
+<definition word="смотреть" definition="to look, watch" parts="verb" />
+<definition word="почему" definition="why" parts="adverb" />
+<definition word="потому" definition="that's why" parts="adverb" />
+<definition word="сторона" definition="side, party" parts="noun" />
+<definition word="просто" definition="simply" parts="adverb" />
+<definition word="нога" definition="foot, leg" parts="noun" />
+<definition word="сидеть" definition="to sit" parts="verb" />
+<definition word="понять" definition="to understand; realize" parts="verb" />
+<definition word="иметь" definition="to have, own" parts="verb" />
+<definition word="конечный" definition="final, last" parts="adjective" />
+<definition word="делать" definition="to do, make" parts="verb" />
+<definition word="вдруг" definition="suddenly" parts="adverb" />
+<definition word="над" definition="above, over" parts="preposition" />
+<definition word="взять" definition="to take" parts="verb" />
+<definition word="никто" definition="nobody" parts="pronoun" />
+<definition word="сделать" definition="to do, make, finish" parts="verb" />
+<definition word="дверь" definition="door" parts="noun" />
+<definition word="перед" definition="before, in front of" parts="preposition" />
+<definition word="нужный" definition="necessary" parts="adjective" />
+<definition word="понимать" definition="to understand" parts="verb" />
+<definition word="казаться" definition="to seem, appear" parts="verb" />
+<definition word="работа" definition="work, job" parts="noun" />
+<definition word="три" definition="three" parts="cardinal number" />
+<definition word="ваш" definition="yours" parts="pronoun" />
+<definition word="уж" definition="really, already adverb," parts="particle" />
+<definition word="земля" definition="earth, land, soil" parts="noun" />
+<definition word="конец" definition="end, distance" parts="noun" />
+<definition word="несколько" definition="several, some" parts="adverb" />
+<definition word="час" definition="hour, time" parts="noun" />
+<definition word="голос" definition="voice" parts="noun" />
+<definition word="город" definition="town, city" parts="noun" />
+<definition word="последний" definition="last, the latest, new" parts="adjective" />
+<definition word="пока" definition="for the present" parts="adverb" />
+<definition word="хорошо" definition="well" parts="adverb" />
+<definition word="давать" definition="to give; let, allow" parts="verb" />
+<definition word="вода" definition="water" parts="noun" />
+<definition word="более" definition="more" parts="adverb" />
+<definition word="хотя" definition="although" parts="conjunction" />
+<definition word="всегда" definition="always" parts="adverb" />
+<definition word="второй" definition="second ordinal" parts="number" />
+<definition word="куда" definition="where, what for, much" parts="adverb" />
+<definition word="пойти" definition="to go" parts="verb" />
+<definition word="стол" definition="table, desk; board" parts="noun" />
+<definition word="ребёнок" definition="child, kid, infant" parts="noun" />
+<definition word="увидеть" definition="to see" parts="verb" />
+<definition word="сила" definition="strength, force" parts="noun" />
+<definition word="отец" definition="father" parts="noun" />
+<definition word="женщина" definition="woman" parts="noun" />
+<definition word="машина" definition="car, machine, engine" parts="noun" />
+<definition word="случай" definition="case, occasion, incident" parts="noun" />
+<definition word="ночь" definition="night" parts="noun" />
+<definition word="сразу" definition="at once, right away, just" parts="adverb" />
+<definition word="мир" definition="world" parts="noun" />
+<definition word="совсем" definition="quite, entirely, totally" parts="adverb" />
+<definition word="остаться" definition="to remain, stay" parts="verb" />
+<definition word="об" definition="about, of" parts="preposition" />
+<definition word="вид" definition="appearance, look, view" parts="noun" />
+<definition word="выйти" definition="to go out, come out, appear" parts="verb" />
+<definition word="дать" definition="to give" parts="verb" />
+<definition word="работать" definition="to work" parts="verb" />
+<definition word="любить" definition="to love" parts="verb" />
+<definition word="старый" definition="old" parts="adjective" />
+<definition word="почти" definition="almost" parts="adverb" />
+<definition word="ряд" definition="row, line" parts="noun" />
+<definition word="оказаться" definition="find oneself, turn out" parts="verb" />
+<definition word="начало" definition="beginning, origin, source" parts="noun" />
+<definition word="твой" definition="your, yours (informal)" parts="pronoun" />
+<definition word="вопрос" definition="question, matter, problem" parts="noun" />
+<definition word="много" definition="many, much" parts="adverb" />
+<definition word="война" definition="war" parts="noun" />
+<definition word="снова" definition="again" parts="adverb" />
+<definition word="ответить" definition="to answer, reply" parts="verb" />
+<definition word="между" definition="between, among" parts="preposition" />
+<definition word="подумать" definition="to think" parts="verb" />
+<definition word="опять" definition="again" parts="adverb" />
+<definition word="белый" definition="white" parts="adjective" />
+<definition word="деньги" definition="money" parts="noun" />
+<definition word="значить" definition="to mean, signify" parts="verb" />
+<definition word="про" definition="about, for" parts="preposition" />
+<definition word="лишь" definition="only, as soon as adverb, conj" parts="" />
+<definition word="минута" definition="minute, moment" parts="noun" />
+<definition word="жена" definition="wife" parts="noun" />
+<definition word="посмотреть" definition="to take a look, watch, inspect" parts="verb" />
+<definition word="правда" definition="truth" parts="noun" />
+<definition word="главный" definition="main, chief" parts="adjective" />
+<definition word="страна" definition="country" parts="noun" />
+<definition word="свет" definition="light;world" parts="noun" />
+<definition word="ждать" definition="to wait" parts="verb" />
+<definition word="мать" definition="mother" parts="noun" />
+<definition word="будто" definition="as if, as though" parts="conjunction" />
+<definition word="никогда" definition="never" parts="adverb" />
+<definition word="товарищ" definition="comrade, friend" parts="noun" />
+<definition word="дорога" definition="road, way, journey" parts="noun" />
+<definition word="однако" definition="however, though conj," parts="misc" />
+<definition word="лежать" definition="to lie, be situated" parts="verb" />
+<definition word="именно" definition="namely, just" parts="misc" />
+<definition word="окно" definition="window, windowsill" parts="noun" />
+<definition word="никакой" definition="no, none" parts="pronoun" />
+<definition word="найти" definition="to find, discover, consider" parts="verb" />
+<definition word="писать" definition="to write" parts="verb" />
+<definition word="комната" definition="a room" parts="noun" />
+<definition word="Москва" definition="Moscow" parts="noun" />
+<definition word="часть" definition="part, share, department" parts="noun" />
+<definition word="вообще" definition="in general, altogether, on the whole" parts="adverb" />
+<definition word="книга" definition="a book" parts="noun" />
+<definition word="маленький" definition="small, little" parts="adjective" />
+<definition word="улица" definition="street" parts="noun" />
+<definition word="решить" definition="to decide, solve" parts="verb" />
+<definition word="далекий" definition="distant, remote" parts="adjective" />
+<definition word="душа" definition="soul, spirit" parts="noun" />
+<definition word="чуть" definition="hardly, slightly" parts="adverb" />
+<definition word="вернуться" definition="to return" parts="verb" />
+<definition word="утро" definition="morning" parts="noun" />
+<definition word="некоторый" definition="some" parts="pronoun" />
+<definition word="считать" definition="to count, consider" parts="verb" />
+<definition word="сколько" definition="how much, how many" parts="cardinal" />
+<definition word="помнить" definition="to remember" parts="verb" />
+<definition word="вечер" definition="evening" parts="noun" />
+<definition word="пол" definition="floor; sex" parts="noun" />
+<definition word="таки" definition="after all" parts="particle" />
+<definition word="получить" definition="to receive, get, obtain" parts="verb" />
+<definition word="народ" definition="people, nation" parts="noun" />
+<definition word="плечо" definition="shoulder, upper arm" parts="noun" />
+<definition word="хоть" definition="even, if you want, though" parts="conjunction" />
+<definition word="сегодня" definition="today" parts="adverb" />
+<definition word="бог" definition="god" parts="noun" />
+<definition word="вместе" definition="together" parts="adverb" />
+<definition word="взгляд" definition="look, glance; view" parts="noun" />
+<definition word="ходить" definition="to go, walk" parts="verb" />
+<definition word="зачем" definition="what for, why" parts="adverb" />
+<definition word="советский" definition="Soviet" parts="adjective" />
+<definition word="русский" definition="Russian" parts="adjective" />
+<definition word="бывать" definition="be, visit, happen" parts="verb" />
+<definition word="полный" definition="full, complete adj" parts="" />
+<definition word="прийти" definition="to come, arrive" parts="verb" />
+<definition word="палец" definition="finger, toe" parts="noun" />
+<definition word="Россия" definition="Russia" parts="noun" />
+<definition word="любой" definition="any, every" parts="pronoun" />
+<definition word="история" definition="history, story, event" parts="noun" />
+<definition word="наконец" definition="at last, finally" parts="adverb" />
+<definition word="мысль" definition="thought, idea" parts="noun" />
+<definition word="узнать" definition="to know, learn, recognize" parts="verb" />
+<definition word="назад" definition="back, backwards" parts="adverb" />
+<definition word="общий" definition="general, common" parts="adjective" />
+<definition word="заметить" definition="to notice, observe" parts="verb" />
+<definition word="словно" definition="as if, like" parts="conjunction" />
+<definition word="прошлый" definition="past" parts="adjective" />
+<definition word="уйти" definition="to leave, go away" parts="verb" />
+<definition word="известный" definition="well-known, famous" parts="adjective" />
+<definition word="давно" definition="long ago" parts="adverb" />
+<definition word="слышать" definition="to hear" parts="verb" />
+<definition word="слушать" definition="to listen, hear" parts="verb" />
+<definition word="бояться" definition="to be afraid, fear" parts="verb" />
+<definition word="сын" definition="son" parts="noun" />
+<definition word="нельзя" definition="it is impossible, can't" parts="predicate" />
+<definition word="прямо" definition="straight, frankly" parts="adverb" />
+<definition word="долго" definition="for a long time" parts="adverb" />
+<definition word="быстро" definition="fast, quickly" parts="adverb" />
+<definition word="лес" definition="forest" parts="noun" />
+<definition word="похожий" definition="similar, alike" parts="adjective" />
+<definition word="пора" definition="time; pore" parts="noun" />
+<definition word="пять" definition="five" parts="cardinal number" />
+<definition word="глядеть" definition="to look, gaze" parts="verb" />
+<definition word="оно" definition="it" parts="pronoun" />
+<definition word="сесть" definition="to sit" parts="verb" />
+<definition word="имя" definition="name" parts="noun" />
+<definition word="ж" definition="and, as for, but" parts="misc" />
+<definition word="разговор" definition="talk, conversation" parts="noun" />
+<definition word="тело" definition="body" parts="noun" />
+<definition word="молодой" definition="young; bridegroom (as a noun)" parts="adjective" />
+<definition word="стена" definition="wall" parts="noun" />
+<definition word="красный" definition="red" parts="adjective" />
+<definition word="читать" definition="to read" parts="verb" />
+<definition word="право" definition="right" parts="noun" />
+<definition word="старик" definition="old man" parts="noun" />
+<definition word="ранний" definition="early" parts="adjective" />
+<definition word="хотеться" definition="want, like" parts="misc" />
+<definition word="мама" definition="mummy, mum" parts="noun" />
+<definition word="оставаться" definition="to remain, stay" parts="verb" />
+<definition word="высокий" definition="tall, high" parts="adjective" />
+<definition word="путь" definition="way, track, path" parts="noun" />
+<definition word="поэтому" definition="therefore" parts="adverb" />
+<definition word="совершенно" definition="absolutely, quite" parts="adverb" />
+<definition word="кроме" definition="except, besides" parts="preposition" />
+<definition word="тысяча" definition="a thousand" parts="cardinal number" />
+<definition word="месяц" definition="month" parts="noun" />
+<definition word="брать" definition="to take; hire" parts="verb" />
+<definition word="написать" definition="to write" parts="verb" />
+<definition word="целый" definition="intact, whole, entire" parts="adjective" />
+<definition word="огромный" definition="huge, enormous" parts="adjective" />
+<definition word="начинать" definition="to begin" parts="verb" />
+<definition word="спина" definition="back" parts="noun" />
+<definition word="настоящий" definition="present; real, true" parts="adjective" />
+<definition word="пусть" definition="let's, though conj," parts="particle" />
+<definition word="язык" definition="tongue, language" parts="noun" />
+<definition word="точно" definition="exactly" parts="adverb" />
+<definition word="среди" definition="among" parts="preposition" />
+<definition word="чувствовать" definition="to feel" parts="verb" />
+<definition word="сердце" definition="heart" parts="noun" />
+<definition word="вести" definition="to lead" parts="verb" />
+<definition word="иногда" definition="sometimes" parts="adverb" />
+<definition word="мальчик" definition="boy" parts="noun" />
+<definition word="успеть" definition="to be in time, be successful" parts="verb" />
+<definition word="небо" definition="sky" parts="noun" />
+<definition word="живой" definition="living, live, lively" parts="adjective" />
+<definition word="смерть" definition="death" parts="noun" />
+<definition word="продолжать" definition="to continue" parts="verb" />
+<definition word="девушка" definition="girl, miss" parts="noun" />
+<definition word="образ" definition="shape, form, image" parts="noun" />
+<definition word="ко" definition="to, towards, by" parts="preposition" />
+<definition word="забыть" definition="to forget" parts="verb" />
+<definition word="вокруг" definition="around" parts="preposition" />
+<definition word="письмо" definition="letter" parts="noun" />
+<definition word="власть" definition="power" parts="noun" />
+<definition word="чёрный" definition="black" parts="adjective" />
+<definition word="пройти" definition="to pass, go by, be over" parts="verb" />
+<definition word="появиться" definition="to appear, show up" parts="verb" />
+<definition word="воздух" definition="air" parts="noun" />
+<definition word="разный" definition="different" parts="adjective" />
+<definition word="выходить" definition="to go out; nurse" parts="verb" />
+<definition word="просить" definition="to ask" parts="verb" />
+<definition word="брат" definition="brother" parts="noun" />
+<definition word="собственный" definition="one's own" parts="adjective" />
+<definition word="отношение" definition="relationship, attitude" parts="noun" />
+<definition word="затем" definition="then, after that" parts="adverb" />
+<definition word="пытаться" definition="to try" parts="verb" />
+<definition word="показать" definition="to show, display" parts="verb" />
+<definition word="вспомнить" definition="to remember, recall" parts="verb" />
+<definition word="система" definition="system" parts="noun" />
+<definition word="четыре" definition="four" parts="cardinal number" />
+<definition word="квартира" definition="flat, apartment" parts="noun" />
+<definition word="держать" definition="to hold, keep" parts="verb" />
+<definition word="также" definition="also, as well, too" parts="misc" />
+<definition word="любовь" definition="love" parts="noun" />
+<definition word="солдат" definition="soldier" parts="noun" />
+<definition word="откуда" definition="where… from" parts="adverb" />
+<definition word="чтоб" definition="that, in order that," parts="misc" />
+<definition word="называть" definition="to call, name," parts="verb" />
+<definition word="третий" definition="third ordinal" parts="number" />
+<definition word="хозяин" definition="master, boss, host" parts="noun" />
+<definition word="вроде" definition="like, not unlike preposition," parts="particle" />
+<definition word="уходить" definition="to leave, go away" parts="verb" />
+<definition word="подойти" definition="to approach, come up" parts="verb" />
+<definition word="поднять" definition="to lift, raise" parts="verb" />
+<definition word="особенно" definition="especially, particularly" parts="adverb" />
+<definition word="спрашивать" definition="to ask, inquire" parts="verb" />
+<definition word="начальник" definition="chief, head, superior" parts="noun" />
+<definition word="оба" definition="both" parts="numeral" />
+<definition word="бросить" definition="to throw" parts="verb" />
+<definition word="школа" definition="school" parts="noun" />
+<definition word="парень" definition="boy, fellow, guy" parts="noun" />
+<definition word="кровь" definition="blood" parts="noun" />
+<definition word="двадцать" definition="twenty numberinal" parts="cardinal number" />
+<definition word="солнце" definition="sun" parts="noun" />
+<definition word="неделя" definition="week" parts="noun" />
+<definition word="послать" definition="to send, dispatch" parts="verb" />
+<definition word="находиться" definition="to be found, turn up" parts="verb" />
+<definition word="ребята" definition="guys, children" parts="noun" />
+<definition word="поставить" definition="to put, place, set" parts="verb" />
+<definition word="встать" definition="to get up, rise, stand up" parts="verb" />
+<definition word="например" definition="for example, for instance" parts="misc" />
+<definition word="шаг" definition="step" parts="noun" />
+<definition word="мужчина" definition="man, male" parts="noun" />
+<definition word="равно" definition="alike, in like manner" parts="adverb" />
+<definition word="нос" definition="nose" parts="noun" />
+<definition word="мало" definition="little, few," parts="adverb" />
+<definition word="внимание" definition="attention" parts="noun" />
+<definition word="капитан" definition="captain, master" parts="noun" />
+<definition word="ухо" definition="ear" parts="noun" />
+<definition word="туда" definition="there" parts="adverb" />
+<definition word="сюда" definition="here" parts="adverb" />
+<definition word="играть" definition="to play" parts="verb" />
+<definition word="следовать" definition="to follow, come next" parts="verb" />
+<definition word="рассказать" definition="to tell, narrate" parts="verb" />
+<definition word="великий" definition="great" parts="adjective" />
+<definition word="действительно" definition="indeed, really" parts="adverb" />
+<definition word="слишком" definition="too, too much" parts="adverb" />
+<definition word="тяжёлый" definition="heavy" parts="adjective" />
+<definition word="спать" definition="to sleep" parts="verb" />
+<definition word="оставить" definition="to leave, abandon" parts="verb" />
+<definition word="войти" definition="to enter, come in" parts="verb" />
+<definition word="длинный" definition="long" parts="adjective" />
+<definition word="чувство" definition="feeling" parts="noun" />
+<definition word="молчать" definition="to keep silence" parts="verb" />
+<definition word="рассказывать" definition="to tell, narrate," parts="verb" />
+<definition word="отвечать" definition="to answer, reply," parts="verb" />
+<definition word="становиться" definition="to stand; to become" parts="verb" />
+<definition word="остановиться" definition="to stop" parts="verb" />
+<definition word="берег" definition="bank, shore, coast" parts="noun" />
+<definition word="семья" definition="family" parts="noun" />
+<definition word="искать" definition="to search" parts="verb" />
+<definition word="генерал" definition="general" parts="noun" />
+<definition word="момент" definition="moment, instant" parts="noun" />
+<definition word="десять" definition="ten" parts="cardinal number" />
+<definition word="начать" definition="to begin" parts="verb" />
+<definition word="следующий" definition="next, following" parts="adjective" />
+<definition word="личный" definition="personal" parts="adjective" />
+<definition word="труд" definition="labour, work" parts="noun" />
+<definition word="верить" definition="to believe" parts="verb" />
+<definition word="группа" definition="group" parts="noun" />
+<definition word="немного" definition="a little" parts="adverb" />
+<definition word="впрочем" definition="however, though" parts="conjunction" />
+<definition word="видно" definition="evidently, obviously" parts="misc" />
+<definition word="являться" definition="to appear" parts="verb" />
+<definition word="муж" definition="husband" parts="noun" />
+<definition word="разве" definition="really?, perhaps" parts="particle" />
+<definition word="движение" definition="movement" parts="noun" />
+<definition word="порядок" definition="order" parts="noun" />
+<definition word="ответ" definition="answer, reply" parts="noun" />
+<definition word="тихо" definition="quietly, softly, slowly" parts="adverb" />
+<definition word="знакомый" definition="familiar, acquainted" parts="adjective" />
+<definition word="газета" definition="newspaper" parts="noun" />
+<definition word="помощь" definition="help" parts="noun" />
+<definition word="сильный" definition="strong, powerful" parts="adjective" />
+<definition word="скорый" definition="quick, fast" parts="adjective" />
+<definition word="собака" definition="dog" parts="noun" />
+<definition word="дерево" definition="tree" parts="noun" />
+<definition word="снег" definition="snow" parts="noun" />
+<definition word="сон" definition="dream" parts="noun" />
+<definition word="смысл" definition="sense, meaning, purpose" parts="noun" />
+<definition word="смочь" definition="to be able" parts="verb" />
+<definition word="против" definition="against, opposite, contrary to" parts="preposition" />
+<definition word="бежать" definition="to run, hurry" parts="verb" />
+<definition word="двор" definition="yard, court" parts="noun" />
+<definition word="форма" definition="form, shape, uniform" parts="noun" />
+<definition word="простой" definition="simple, easy, plain" parts="adjective" />
+<definition word="приехать" definition="to arrive, come" parts="verb" />
+<definition word="иной" definition="different, other" parts="pronoun" />
+<definition word="кричать" definition="to cry, shout" parts="verb" />
+<definition word="возможность" definition="possibility, opportunity, chance" parts="noun" />
+<definition word="общество" definition="society" parts="noun" />
+<definition word="зеленый" definition="green" parts="adjective" />
+<definition word="грудь" definition="breast, chest" parts="noun" />
+<definition word="угол" definition="corner, angle" parts="noun" />
+<definition word="открыть" definition="to open" parts="verb" />
+<definition word="происходить" definition="to happen, occur, take place" parts="verb" />
+<definition word="ладно" definition="in harmony, well, all right" parts="adverb" />
+<definition word="черный" definition="black (as in "she wears black")" parts="noun" />
+<definition word="век" definition="century, age" parts="noun" />
+<definition word="карман" definition="pocket" parts="noun" />
+<definition word="ехать" definition="to go, ride, drive, travel" parts="verb" />
+<definition word="немец" definition="German" parts="noun" />
+<definition word="наверное" definition="probably, most likely" parts="adverb" />
+<definition word="губа" definition="lip" parts="noun" />
+<definition word="дядя" definition="uncle" parts="noun" />
+<definition word="приходить" definition="to come, arrive" parts="verb" />
+<definition word="часто" definition="often" parts="adverb" />
+<definition word="домой" definition="home(as in "she came home")" parts="adverb" />
+<definition word="огонь" definition="fire" parts="noun" />
+<definition word="писатель" definition="writer" parts="noun" />
+<definition word="армия" definition="army" parts="noun" />
+<definition word="состояние" definition="state, condition; fortune" parts="noun" />
+<definition word="зуб" definition="tooth" parts="noun" />
+<definition word="очередь" definition="line, queue, turn" parts="noun" />
+<definition word="кой" definition="which (old-fashioned, literary)" parts="pronoun" />
+<definition word="подняться" definition="to rise, climb" parts="verb" />
+<definition word="камень" definition="stone" parts="noun" />
+<definition word="гость" definition="guest" parts="noun" />
+<definition word="показаться" definition="to appear, come in sight" parts="verb" />
+<definition word="ветер" definition="wind" parts="noun" />
+<definition word="собираться" definition="to gather together, assemble; intend" parts="verb" />
+<definition word="попасть" definition="to hit; to find oneself" parts="verb" />
+<definition word="принять" definition="to take, admit, accept" parts="verb" />
+<definition word="сначала" definition="at first, from the beginning" parts="adverb" />
+<definition word="либо" definition="or" parts="conjunction" />
+<definition word="поехать" definition="to depart, set off" parts="verb" />
+<definition word="услышать" definition="to hear" parts="verb" />
+<definition word="уметь" definition="to be able, know, can" parts="verb" />
+<definition word="случиться" definition="to happen" parts="verb" />
+<definition word="странный" definition="strange" parts="adjective" />
+<definition word="единственный" definition="only, sole" parts="adjective" />
+<definition word="рота" definition="company (military)" parts="noun" />
+<definition word="закон" definition="law, act, statue" parts="noun" />
+<definition word="короткий" definition="short" parts="adjective" />
+<definition word="море" definition="sea" parts="noun" />
+<definition word="добрый" definition="kind" parts="adjective" />
+<definition word="темный" definition="dark" parts="adjective" />
+<definition word="гора" definition="mountain, hill" parts="noun" />
+<definition word="врач" definition="physician, doctor" parts="noun" />
+<definition word="край" definition="border, edge; land, country" parts="noun" />
+<definition word="стараться" definition="to try, endeavour" parts="verb" />
+<definition word="лучший" definition="better, best" parts="adjective" />
+<definition word="река" definition="river" parts="noun" />
+<definition word="военный" definition="military" parts="adjective" />
+<definition word="мера" definition="measure, step" parts="noun" />
+<definition word="страшный" definition="terrible, frightful" parts="adjective" />
+<definition word="вполне" definition="quite, fully" parts="adverb" />
+<definition word="звать" definition="to call" parts="verb" />
+<definition word="произойти" definition="to happen, occur, take place" parts="verb" />
+<definition word="вперед" definition="forward" parts="preposition" />
+<definition word="медленно" definition="slowly" parts="adverb" />
+<definition word="возле" definition="by, near, close by" parts="preposition" />
+<definition word="никак" definition="in now way, by no means" parts="adverb" />
+<definition word="заниматься" definition="to be occupied, engage" parts="verb" />
+<definition word="действие" definition="action, effect" parts="noun" />
+<definition word="довольно" definition="enough; rather" parts="adverb" />
+<definition word="вещь" definition="thing" parts="noun" />
+<definition word="необходимый" definition="necessary" parts="adjective" />
+<definition word="ход" definition="move" parts="noun" />
+<definition word="боль" definition="pain" parts="noun" />
+<definition word="судьба" definition="fate, fortune, destiny" parts="noun" />
+<definition word="причина" definition="cause, reason, motive" parts="noun" />
+<definition word="положить" definition="to lay down, put down, place" parts="verb" />
+<definition word="едва" definition="hardly, just, barely" parts="adverb" />
+<definition word="черта" definition="line, boundary; trait" parts="noun" />
+<definition word="девочка" definition="girl, little girl" parts="noun" />
+<definition word="лёгкий" definition="light, easy" parts="adjective" />
+<definition word="волос" definition="hair" parts="noun" />
+<definition word="купить" definition="to buy, purchase" parts="verb" />
+<definition word="номер" definition="number, size, room, issue" parts="noun" />
+<definition word="основной" definition="main" parts="adjective" />
+<definition word="широкий" definition="wide" parts="adjective" />
+<definition word="умереть" definition="to die" parts="verb" />
+<definition word="далеко" definition="far, far off" parts="adverb" />
+<definition word="плохо" definition="badly" parts="adverb" />
+<definition word="глава" definition="head, chief" parts="noun" />
+<definition word="красивый" definition="beautiful" parts="adjective" />
+<definition word="серый" definition="grey; dull" parts="adjective" />
+<definition word="пить" definition="to drink" parts="verb" />
+<definition word="командир" definition="commander, commanding officer" parts="noun" />
+<definition word="обычно" definition="usually" parts="adverb" />
+<definition word="партия" definition="party" parts="noun" />
+<definition word="проблема" definition="problem, issue" parts="noun" />
+<definition word="страх" definition="fear" parts="noun" />
+<definition word="проходить" definition="to pass, go; study" parts="verb" />
+<definition word="ясно" definition="clear, clearly" parts="adverb" />
+<definition word="снять" definition="to take away, take off; photograph" parts="verb" />
+<definition word="бумага" definition="paper" parts="noun" />
+<definition word="герой" definition="hero" parts="noun" />
+<definition word="пара" definition="pair, couple" parts="noun" />
+<definition word="государство" definition="State" parts="noun" />
+<definition word="деревня" definition="village, country" parts="noun" />
+<definition word="речь" definition="speech" parts="noun" />
+<definition word="начаться" definition="to begin" parts="verb" />
+<definition word="средство" definition="means, remedy" parts="noun" />
+<definition word="положение" definition="position, posture, condition, state" parts="noun" />
+<definition word="связь" definition="tie, bond; connection, relation" parts="noun" />
+<definition word="скоро" definition="quickly, fast, soon" parts="adverb" />
+<definition word="небольшой" definition="small, not great" parts="adjective" />
+<definition word="представлять" definition="to present, introduce, imagine" parts="verb" />
+<definition word="завтра" definition="tomorrow" parts="adverb" />
+<definition word="объяснить" definition="to explain" parts="verb" />
+<definition word="пустой" definition="empty, hollow; idle" parts="adjective" />
+<definition word="произнести" definition="to pronounce, say, utter" parts="verb" />
+<definition word="человеческий" definition="human" parts="adjective" />
+<definition word="нравиться" definition="to please, like" parts="verb" />
+<definition word="однажды" definition="once, one day" parts="adverb" />
+<definition word="мимо" definition="past, by" parts="preposition" />
+<definition word="иначе" definition="otherwise, differentlyl" parts="adverb" />
+<definition word="существовать" definition="to exist, to be" parts="verb" />
+<definition word="класс" definition="class" parts="noun" />
+<definition word="удаться" definition="turn out well, succeed, manage" parts="verb" />
+<definition word="толстый" definition="thick, heavy, fat" parts="adjective" />
+<definition word="цель" definition="goal, object, target" parts="noun" />
+<definition word="сквозь" definition="through" parts="preposition" />
+<definition word="прийтись" definition="to fit, fall; have to" parts="verb" />
+<definition word="чистый" definition="clean, pure" parts="adjective" />
+<definition word="знать" definition="to know" parts="noun" />
+<definition word="прежний" definition="former" parts="adjective" />
+<definition word="профессор" definition="professor" parts="noun" />
+<definition word="господин" definition="gentleman, Mr." parts="noun" />
+<definition word="счастье" definition="happiness, luck" parts="noun" />
+<definition word="худой" definition="thin, skinny" parts="adjective" />
+<definition word="дух" definition="spirit" parts="noun" />
+<definition word="план" definition="plan" parts="noun" />
+<definition word="чужой" definition="somebody else's; strange, foreign" parts="adjective" />
+<definition word="зал" definition="hall" parts="noun" />
+<definition word="представить" definition="to presetn, produce, introduce" parts="verb" />
+<definition word="особый" definition="special" parts="adjective" />
+<definition word="директор" definition="director, manager" parts="noun" />
+<definition word="бывший" definition="former, ex-" parts="adjective" />
+<definition word="память" definition="memory" parts="noun" />
+<definition word="близкий" definition="near, similar; intimate" parts="adjective" />
+<definition word="сей" definition="this" parts="pronoun" />
+<definition word="результат" definition="result, outcome" parts="noun" />
+<definition word="больной" definition="sick" parts="adjective" />
+<definition word="данный" definition="given, present" parts="adjective" />
+<definition word="кстати" definition="to the point, at the same time" parts="adverb" />
+<definition word="назвать" definition="to call, name" parts="verb" />
+<definition word="след" definition="track, footprint" parts="noun" />
+<definition word="улыбаться" definition="to smile" parts="verb" />
+<definition word="бутылка" definition="bottle" parts="noun" />
+<definition word="трудно" definition="with difficulty" parts="adverb" />
+<definition word="условие" definition="condition, term" parts="noun" />
+<definition word="прежде" definition="before" parts="preposition" />
+<definition word="ум" definition="mind, brains, intellect" parts="noun" />
+<definition word="улыбнуться" definition="to smile" parts="verb" />
+<definition word="процесс" definition="process" parts="noun" />
+<definition word="картина" definition="picture, painting" parts="noun" />
+<definition word="вместо" definition="instead" parts="preposition" />
+<definition word="старший" definition="elder, senior" parts="adjective" />
+<definition word="легко" definition="easily, lightly" parts="adverb" />
+<definition word="центр" definition="center" parts="noun" />
+<definition word="подобный" definition="similar, like" parts="adjective" />
+<definition word="возможно" definition="as… as possible(as in "as soon as possible")" parts="adverb" />
+<definition word="около" definition="by, near" parts="preposition" />
+<definition word="смеяться" definition="to laugh" parts="verb" />
+<definition word="сто" definition="hundred numberinal" parts="cardinal number" />
+<definition word="будущее" definition="future" parts="noun" />
+<definition word="хватать" definition="to snatch, seize; be sufficient" parts="verb" />
+<definition word="число" definition="" parts="number noun" />
+<definition word="всякое" definition="any, every" parts="pronoun" />
+<definition word="рубль" definition="ruble" parts="noun" />
+<definition word="почувствовать" definition="to feel" parts="verb" />
+<definition word="принести" definition="to bring" parts="verb" />
+<definition word="вера" definition="faith, belief" parts="noun" />
+<definition word="вовсе" definition="quiet" parts="adverb" />
+<definition word="удар" definition="blow, stroke" parts="noun" />
+<definition word="телефон" definition="telephone" parts="noun" />
+<definition word="колено" definition="knee" parts="noun" />
+<definition word="согласиться" definition="to agree, consent" parts="verb" />
+<definition word="мало" definition="little, few, not enough numberinal" parts="cardinal number" />
+<definition word="коридор" definition="corridor, passage" parts="noun" />
+<definition word="мужик" definition="muzhik, man" parts="noun" />
+<definition word="правый" definition="right" parts="adjective" />
+<definition word="автор" definition="author" parts="noun" />
+<definition word="холодный" definition="cold, cool" parts="adjective" />
+<definition word="хватить" definition="to snatch, seize, suffice" parts="verb" />
+<definition word="многие" definition="many" parts="pronoun" />
+<definition word="встреча" definition="meeting, reception" parts="noun" />
+<definition word="кабинет" definition="study, room, office suite" parts="noun" />
+<definition word="документ" definition="document" parts="noun" />
+<definition word="самолет" definition="aircraft, aeroplane" parts="noun" />
+<definition word="вниз" definition="down, downwards" parts="adverb" />
+<definition word="принимать" definition="to take, admin, accept" parts="verb" />
+<definition word="игра" definition="game, play" parts="noun" />
+<definition word="рассказ" definition="story" parts="noun" />
+<definition word="хлеб" definition="bread" parts="noun" />
+<definition word="развитие" definition="development" parts="noun" />
+<definition word="убить" definition="to kill" parts="verb" />
+<definition word="родной" definition="own, native, dear" parts="adjective" />
+<definition word="открытый" definition="open" parts="adjective" />
+<definition word="менее" definition="less" parts="adverb" />
+<definition word="предложить" definition="to offer, propose, suggest" parts="verb" />
+<definition word="желтый" definition="yellow" parts="adjective" />
+<definition word="приходиться" definition="to fit, fall; have to" parts="verb" />
+<definition word="выпить" definition="to drink" parts="verb" />
+<definition word="крикнуть" definition="to cry, shout" parts="verb" />
+<definition word="трубка" definition="tube, roll, pipe" parts="noun" />
+<definition word="враг" definition="enemy" parts="noun" />
+<definition word="показывать" definition="to show, display" parts="verb" />
+<definition word="двое" definition="two" parts="cardinal number" />
+<definition word="доктор" definition="doctor" parts="noun" />
+<definition word="ладонь" definition="palm" parts="noun" />
+<definition word="вызвать" definition="to call, send" parts="verb" />
+<definition word="спокойно" definition="quietly" parts="adverb" />
+<definition word="попросить" definition="to ask" parts="verb" />
+<definition word="наука" definition="science" parts="noun" />
+<definition word="лейтенант" definition="lieutenant" parts="noun" />
+<definition word="служба" definition="service, work" parts="noun" />
+<definition word="оказываться" definition="to turn out, find oneself" parts="verb" />
+<definition word="привести" definition="to bring" parts="verb" />
+<definition word="сорок" definition="forty" parts="cardinal number" />
+<definition word="счет" definition="bill, account" parts="noun" />
+<definition word="возвращаться" definition="to return" parts="verb" />
+<definition word="золотой" definition="golden" parts="adjective" />
+<definition word="местный" definition="local" parts="adjective" />
+<definition word="кухня" definition="kitchen" parts="noun" />
+<definition word="крупный" definition="large, big, prominent" parts="adjective" />
+<definition word="решение" definition="decision, conclusion" parts="noun" />
+<definition word="молодая" definition="bride; young (as an adjective)" parts="noun" />
+<definition word="тридцать" definition="thirty" parts="cardinal number" />
+<definition word="роман" definition="novel, romance" parts="noun" />
+<definition word="требовать" definition="to demand" parts="verb" />
+<definition word="компания" definition="company" parts="noun" />
+<definition word="частый" definition="frequent" parts="adjective" />
+<definition word="российский" definition="Russian" parts="adjective" />
+<definition word="рабочий" definition="working" parts="adjective" />
+<definition word="потерять" definition="to lose" parts="verb" />
+<definition word="течение" definition="current" parts="noun" />
+<definition word="синий" definition="dark blue" parts="adjective" />
+<definition word="столько" definition="so much, so many" parts="adverb" />
+<definition word="теплый" definition="warm" parts="adjective" />
+<definition word="метр" definition="meter, metre" parts="noun" />
+<definition word="достать" definition="to reach; get, obtain" parts="verb" />
+<definition word="железный" definition="ferreous, iron" parts="adjective" />
+<definition word="институт" definition="institute" parts="noun" />
+<definition word="сообщить" definition="to report, let know" parts="verb" />
+<definition word="интерес" definition="interes" parts="noun" />
+<definition word="обычный" definition="usual, ordinary" parts="adjective" />
+<definition word="появляться" definition="to appear, show up" parts="verb" />
+<definition word="упасть" definition="to fall" parts="verb" />
+<definition word="остальной" definition="remaining, the rest of" parts="adjective" />
+<definition word="половина" definition="half" parts="noun" />
+<definition word="московский" definition="Moscow" parts="adjective" />
+<definition word="шесть" definition="six" parts="cardinal number" />
+<definition word="получиться" definition="to come, arrive, turn out" parts="verb" />
+<definition word="качество" definition="quality" parts="noun" />
+<definition word="бой" definition="battle, fight, combat" parts="noun" />
+<definition word="шея" definition="neck" parts="noun" />
+<definition word="вон" definition="out" parts="adverb" />
+<definition word="идея" definition="idea" parts="noun" />
+<definition word="видимо" definition="apparently, seemingly" parts="adverb" />
+<definition word="достаточно" definition="enough, sufficiently" parts="adverb" />
+<definition word="провести" definition="to accompany, set off; conduct; spend" parts="verb" />
+<definition word="важный" definition="important" parts="adjective" />
+<definition word="трава" definition="grass" parts="noun" />
+<definition word="дед" definition="grandfather, old man" parts="noun" />
+<definition word="сознание" definition="consciousness" parts="noun" />
+<definition word="родитель" definition="parent" parts="noun" />
+<definition word="простить" definition="to forgive" parts="verb" />
+<definition word="бить" definition="to beat, hit" parts="verb" />
+<definition word="чай" definition="tea" parts="noun" />
+<definition word="поздний" definition="late" parts="adjective" />
+<definition word="кивнуть" definition="to nod" parts="verb" />
+<definition word="род" definition="family, clan, generation" parts="noun" />
+<definition word="исчезнуть" definition="to disappear" parts="verb" />
+<definition word="тонкий" definition="thin" parts="adjective" />
+<definition word="немецкий" definition="German" parts="adjective" />
+<definition word="звук" definition="sound" parts="noun" />
+<definition word="отдать" definition="to return, give back" parts="verb" />
+<definition word="магазин" definition="shop, store" parts="noun" />
+<definition word="президент" definition="president; director" parts="noun" />
+<definition word="поэт" definition="poet" parts="noun" />
+<definition word="спасибо" definition="gratitude, thanks" parts="noun" />
+<definition word="болезнь" definition="illness, sickness, disease" parts="noun" />
+<definition word="событие" definition="event" parts="noun" />
+<definition word="помочь" definition="to help" parts="verb" />
+<definition word="кожа" definition="skin" parts="noun" />
+<definition word="лист" definition="leaf, sheet" parts="noun" />
+<definition word="слать" definition="to send" parts="verb" />
+<definition word="вспоминать" definition="to remember, recall" parts="verb" />
+<definition word="прекрасный" definition="beautiful, fine" parts="adjective" />
+<definition word="слеза" definition="tear" parts="noun" />
+<definition word="надежда" definition="hope" parts="noun" />
+<definition word="молча" definition="silently, without a word" parts="adverb" />
+<definition word="сильно" definition="strongly" parts="adverb" />
+<definition word="верный" definition="correct; faithful; reliable" parts="adjective" />
+<definition word="литература" definition="literature" parts="noun" />
+<definition word="оружие" definition="weapon" parts="noun" />
+<definition word="готовый" definition="ready" parts="adjective" />
+<definition word="запах" definition="smell, odour, scent" parts="noun" />
+<definition word="неожиданно" definition="unexpectedly, suddenly" parts="adverb" />
+<definition word="вчера" definition="yesterday" parts="adverb" />
+<definition word="вздохнуть" definition="to take breath, to sigh" parts="verb" />
+<definition word="роль" definition="role" parts="noun" />
+<definition word="рост" definition="growth, increase; height" parts="noun" />
+<definition word="природа" definition="nature" parts="noun" />
+<definition word="политический" definition="political" parts="adjective" />
+<definition word="точка" definition="dot, point" parts="noun" />
+<definition word="звезда" definition="star" parts="noun" />
+<definition word="петь" definition="to sing" parts="verb" />
+<definition word="садиться" definition="to sit down" parts="verb" />
+<definition word="фамилия" definition="surname" parts="noun" />
+<definition word="характер" definition="character, disposition, temper" parts="noun" />
+<definition word="пожалуйста" definition="please" parts="misc" />
+<definition word="выше" definition="higher" parts="adverb" />
+<definition word="офицер" definition="officer" parts="noun" />
+<definition word="толпа" definition="crowd" parts="noun" />
+<definition word="перестать" definition="to stop, cease" parts="verb" />
+<definition word="придтись" definition="to fit, fall; have to" parts="verb" />
+<definition word="уровень" definition="level" parts="noun" />
+<definition word="неизвестный" definition="unknown" parts="adjective" />
+<definition word="кресло" definition="armchair" parts="noun" />
+<definition word="баба" definition="woman, wife, old woman," parts="noun" />
+<definition word="секунда" definition="a second" parts="noun" />
+<definition word="пожаловать" definition="to grant, bestow" parts="verb" />
+<definition word="банк" definition="bank" parts="noun" />
+<definition word="опыт" definition="experience" parts="noun" />
+<definition word="тихий" definition="quiet, low, scelent" parts="adjective" />
+<definition word="поскольку" definition="so far as, since" parts="misc" />
+<definition word="сапог" definition="(high) boot" parts="noun" />
+<definition word="правило" definition="rule" parts="noun" />
+<definition word="стекло" definition="glass" parts="noun" />
+<definition word="получать" definition="to receve, get" parts="verb" />
+<definition word="внутренний" definition="inside, internal" parts="adjective" />
+<definition word="дочь" definition="daughter" parts="noun" />
+<definition word="называться" definition="to call oneself" parts="verb" />
+<definition word="надеяться" definition="to hope" parts="verb" />
+<definition word="член" definition="member, limb" parts="noun" />
+<definition word="протянуть" definition="to stretch, extend" parts="verb" />
+<definition word="государственный" definition="State" parts="adjective" />
+<definition word="десяток" definition="ten, dozens" parts="noun" />
+<definition word="глубокий" definition="deep" parts="adjective" />
+<definition word="цветок" definition="flower" parts="noun" />
+<definition word="ах" definition="ah!, oh!" parts="misc" />
+<definition word="желание" definition="wish" parts="noun" />
+<definition word="дождь" definition="rain" parts="noun" />
+<definition word="впереди" definition="before, in front of" parts="preposition" />
+<definition word="подходить" definition="to come up, approach; to fit" parts="verb" />
+<definition word="много" definition="many, much, a lot of" parts="cardinal number" />
+<definition word="лоб" definition="forehead" parts="noun" />
+<definition word="улыбка" definition="smile" parts="noun" />
+<definition word="борьба" definition="fight, struggle" parts="noun" />
+<definition word="ворот" definition="collar" parts="noun" />
+<definition word="ящик" definition="box, case" parts="noun" />
+<definition word="этаж" definition="floor, storey" parts="noun" />
+<definition word="служить" definition="to serve" parts="verb" />
+<definition word="вновь" definition="again, once more" parts="adverb" />
+<definition word="голубой" definition="blue, sky-blue" parts="adjective" />
+<definition word="нечего" definition="there is nothing, there is no need" parts="misc" />
+<definition word="революция" definition="revolution" parts="noun" />
+<definition word="впервые" definition="for the first time" parts="adverb" />
+<definition word="сосед" definition="neighbour" parts="noun" />
+<definition word="сестра" definition="sister" parts="noun" />
+<definition word="долгий" definition="long" parts="adjective" />
+<definition word="чей" definition="whose" parts="pronoun" />
+<definition word="поверить" definition="to believe" parts="verb" />
+<definition word="ситуация" definition="situation" parts="noun" />
+<definition word="взглянуть" definition="to look, give a glance" parts="verb" />
+<definition word="слабый" definition="weak" parts="adjective" />
+<definition word="количество" definition="quantity" parts="noun" />
+<definition word="вызывать" definition="to call, send" parts="verb" />
+<definition word="уверенный" definition="confident, sure" parts="adjective" />
+<definition word="выход" definition="exit" parts="noun" />
+<definition word="совет" definition="advice" parts="noun" />
+<definition word="дурак" definition="fool, idiot" parts="noun" />
+<definition word="любимый" definition="dear, loved" parts="adjective" />
+<definition word="союз" definition="union, alliance;" parts="conjunction noun" />
+<definition word="лето" definition="summer" parts="noun" />
+<definition word="ожидать" definition="to expect" parts="verb" />
+<definition word="пришлый" definition="alien, strange" parts="adjective" />
+<definition word="висеть" definition="to hang" parts="verb" />
+<definition word="граница" definition="border" parts="noun" />
+<definition word="цвет" definition="colour, color" parts="noun" />
+<definition word="серьезный" definition="serious" parts="adjective" />
+<definition word="создать" definition="to create, establish" parts="verb" />
+<definition word="интересно" definition="interestingly" parts="adverb" />
+<definition word="свобода" definition="freedom" parts="noun" />
+<definition word="зато" definition="but, but then" parts="conjunction" />
+<definition word="стул" definition="chair" parts="noun" />
+<definition word="уехать" definition="to leave, depart" parts="verb" />
+<definition word="поезд" definition="train" parts="noun" />
+<definition word="музыка" definition="music" parts="noun" />
+<definition word="быстрый" definition="quick, fast" parts="adjective" />
+<definition word="тень" definition="shadow" parts="noun" />
+<definition word="лошадь" definition="horse" parts="noun" />
+<definition word="поле" definition="field" parts="noun" />
+<definition word="выглядеть" definition="to look" parts="verb" />
+<definition word="учиться" definition="to study, learn" parts="verb" />
+<definition word="левый" definition="left" parts="adjective" />
+<definition word="разговаривать" definition="to talk, speak" parts="verb" />
+<definition word="детский" definition="child's, children's" parts="adjective" />
+<definition word="тип" definition="type, model" parts="noun" />
+<definition word="суд" definition="court, law-court" parts="noun" />
+<definition word="связанный" definition="related, connected, tied-up" parts="adjective" />
+<definition word="горячий" definition="hot" parts="adjective" />
+<definition word="площадь" definition="square, area" parts="noun" />
+<definition word="помогать" definition="to help, assist" parts="verb" />
+<definition word="счастливый" definition="happy" parts="adjective" />
+<definition word="повернуться" definition="to turn" parts="verb" />
+<definition word="позволить" definition="to allow, permit" parts="verb" />
+<definition word="встретить" definition="to meet" parts="verb" />
+<definition word="радость" definition="gladness, joy" parts="noun" />
+<definition word="острый" definition="sharp; spicy" parts="adjective" />
+<definition word="возраст" definition="age" parts="noun" />
+<definition word="орган" definition="organ, body" parts="noun" />
+<definition word="карта" definition="map" parts="noun" />
+<definition word="входить" definition="to enter, come in" parts="verb" />
+<definition word="обнаружить" definition="to discover, find out" parts="verb" />
+<definition word="король" definition="king" parts="noun" />
+<definition word="слава" definition="glory, fame" parts="noun" />
+<definition word="полковник" definition="colonel" parts="noun" />
+<definition word="мелкий" definition="shallow, small" parts="adjective" />
+<definition word="бок" definition="side, flank" parts="noun" />
+<definition word="цена" definition="price" parts="noun" />
+<definition word="информация" definition="information" parts="noun" />
+<definition word="мозг" definition="brain" parts="noun" />
+<definition word="удовольствие" definition="pleasure" parts="noun" />
+<definition word="воля" definition="will" parts="noun" />
+<definition word="область" definition="oblast, province; field" parts="noun" />
+<definition word="крыша" definition="roof" parts="noun" />
+<definition word="нести" definition="to carry" parts="verb" />
+<definition word="обратно" definition="back, backwards" parts="adverb" />
+<definition word="современный" definition="contemporary, modern, up-to-date" parts="adjective" />
+<definition word="дама" definition="lady, partner, queen" parts="noun" />
+<definition word="семь" definition="seve" parts="cardinal number" />
+<definition word="веселый" definition="cheerful, merry" parts="adjective" />
+<definition word="прислать" definition="to send" parts="verb" />
+<definition word="сад" definition="garden, yard" parts="noun" />
+<definition word="правительство" definition="government" parts="noun" />
+<definition word="милый" definition="nice, sweat, dear" parts="adjective" />
+<definition word="относиться" definition="to treat, regard, relate" parts="verb" />
+<definition word="возникать" definition="to arise, appear" parts="verb" />
+<definition word="мол" definition="he says, they say, etc." parts="misc" />
+<definition word="повторить" definition="to repeat" parts="verb" />
+<definition word="название" definition="name, title" parts="noun" />
+<definition word="средний" definition="average, middle" parts="adjective" />
+<definition word="пример" definition="example" parts="noun" />
+<definition word="невозможно" definition="impossible" parts="adverb" />
+<definition word="зеркало" definition="mirrow" parts="noun" />
+<definition word="погибнуть" definition="to perish, be killed" parts="verb" />
+<definition word="американский" definition="American" parts="adjective" />
+<definition word="дым" definition="smog" parts="noun" />
+<definition word="гореть" definition="to burn" parts="verb" />
+<definition word="плакать" definition="to cry" parts="verb" />
+<definition word="весьма" definition="very, highly, greatly" parts="adverb" />
+<definition word="факт" definition="fact" parts="noun" />
+<definition word="двигаться" definition="to move" parts="verb" />
+<definition word="рыба" definition="fish" parts="noun" />
+<definition word="добавить" definition="to add" parts="verb" />
+<definition word="удивиться" definition="to wonder, be surprised" parts="verb" />
+<definition word="бабушка" definition="grandmother" parts="noun" />
+<definition word="вино" definition="wine" parts="noun" />
+<definition word="ибо" definition="for" parts="conjunction" />
+<definition word="учитель" definition="teacher, instructor" parts="noun" />
+<definition word="действовать" definition="to act" parts="verb" />
+<definition word="осторожно" definition="carefully, cautiouslly" parts="adverb" />
+<definition word="круг" definition="circle" parts="noun" />
+<definition word="папа" definition="dad, daddy" parts="noun" />
+<definition word="правильно" definition="correctly, properly" parts="adverb" />
+<definition word="недавно" definition="recently, lately" parts="adverb" />
+<definition word="держаться" definition="to hold on, behave" parts="verb" />
+<definition word="причем" definition="moreover, and what's more" parts="adverb" />
+<definition word="лететь" definition="to fly" parts="verb" />
+<definition word="носить" definition="to wear" parts="verb" />
+<definition word="повод" definition="occastion, reason; bridle" parts="noun" />
+<definition word="лагерь" definition="camp" parts="noun" />
+<definition word="птица" definition="bird" parts="noun" />
+<definition word="корабль" definition="ship" parts="noun" />
+<definition word="мнение" definition="opinion" parts="noun" />
+<definition word="ночной" definition="night" parts="adjective" />
+<definition word="здоровый" definition="healthy" parts="adjective" />
+<definition word="зима" definition="winter" parts="noun" />
+<definition word="сухой" definition="dry" parts="adjective" />
+<definition word="километр" definition="kilometre, kilometer" parts="noun" />
+<definition word="кровать" definition="bed" parts="noun" />
+<definition word="привыкнуть" definition="to get used to, to grow accustomed to" parts="verb" />
+<definition word="прочее" definition="et cetera, other" parts="pronoun" />
+<definition word="свободный" definition="free" parts="adjective" />
+<definition word="лестница" definition="staircase" parts="noun" />
+<definition word="неужели" definition="really, surely" parts="particle" />
+<definition word="обязательно" definition="without fail, be sure" parts="adverb" />
+<definition word="вверх" definition="up, upwards" parts="adverb" />
+<definition word="детство" definition="childhood" parts="noun" />
+<definition word="остров" definition="island" parts="noun" />
+<definition word="статья" definition="article" parts="noun" />
+<definition word="позвонить" definition="to call, to telephone" parts="verb" />
+<definition word="столь" definition="so" parts="adverb" />
+<definition word="мешать" definition="to interfere, prevent; mix" parts="verb" />
+<definition word="водка" definition="vodka" parts="noun" />
+<definition word="темнота" definition="darkness" parts="noun" />
+<definition word="возникнуть" definition="to arise, spring up" parts="verb" />
+<definition word="способный" definition="capable (of)" parts="adjective" />
+<definition word="станция" definition="station" parts="noun" />
+<definition word="желать" definition="to wish" parts="verb" />
+<definition word="попробовать" definition="to try, test" parts="verb" />
+<definition word="получаться" definition="to come out" parts="verb" />
+<definition word="гражданин" definition="citizen" parts="noun" />
+<definition word="странно" definition="strangely" parts="adverb" />
+<definition word="вскоре" definition="soon, shortly" parts="adverb" />
+<definition word="интересный" definition="interesting" parts="adjective" />
+<definition word="команда" definition="team; command" parts="noun" />
+<definition word="заболевание" definition="disease, illness" parts="noun" />
+<definition word="живот" definition="stomach, belly" parts="noun" />
+<definition word="ставить" definition="to put, place, set" parts="verb" />
+<definition word="ради" definition="for the sake of" parts="preposition" />
+<definition word="тишина" definition="silence, stillness" parts="noun" />
+<definition word="понятно" definition="clearly, plainly" parts="adverb" />
+<definition word="фронт" definition="front" parts="noun" />
+<definition word="щека" definition="cheek" parts="noun" />
+<definition word="страшно" definition="terribly, awfully" parts="adverb" />
+<definition word="район" definition="area, region" parts="noun" />
+<definition word="наверно" definition="probably" parts="adverb" />
+<definition word="проводить" definition="to lead, escort; accompany" parts="verb" />
+<definition word="выражение" definition="expression" parts="noun" />
+<definition word="слегка" definition="slightly" parts="adverb" />
+<definition word="мешок" definition="bag, sack" parts="noun" />
+<definition word="обещать" definition="to promise" parts="verb" />
+<definition word="дорогой" definition="on the way" parts="adjective" />
+<definition word="судить" definition="to judge, try" parts="verb" />
+<definition word="большинство" definition="majority" parts="noun" />
+<definition word="собраться" definition="to gather, collect" parts="verb" />
+<definition word="управление" definition="operation, control" parts="noun" />
+<definition word="колоть" definition="to prick" parts="verb" />
+<definition word="мокрый" definition="wet" parts="adjective" />
+<definition word="приказ" definition="order" parts="noun" />
+<definition word="прямой" definition="straight" parts="adjective" />
+<definition word="закричать" definition="to shout, cry out" parts="verb" />
+<definition word="кончиться" definition="to end" parts="verb" />
+<definition word="куст" definition="bush" parts="noun" />
+<definition word="стрелять" definition="to shoot" parts="verb" />
+<definition word="художник" definition="painter, artist" parts="noun" />
+<definition word="знак" definition="sign" parts="noun" />
+<definition word="завод" definition="factory" parts="noun" />
+<definition word="кулак" definition="fist" parts="noun" />
+<definition word="использовать" definition="to use, utilize, make use of" parts="verb" />
+<definition word="стакан" definition="glass" parts="noun" />
+<definition word="пахнуть" definition="to smell" parts="verb" />
+<definition word="отсюда" definition="from here" parts="adverb" />
+<definition word="рот" definition="mouth" parts="noun" />
+<definition word="пора" definition="it's time; at times, now and then" parts="misc" />
