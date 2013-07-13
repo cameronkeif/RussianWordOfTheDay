@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/off_white"
-        android:text="Large Text"
+        android:text="@string/russian_word"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <TextView
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:paddingTop="5dp"
-        android:text="Large Text"
+        android:text="@string/definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <TextView
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:text="Large Text"
+        android:text="@string/part_of_speech"
         android:textStyle="italic"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
