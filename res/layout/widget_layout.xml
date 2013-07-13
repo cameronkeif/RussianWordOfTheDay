@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/widget_background"
@@ -21,6 +21,7 @@
         android:gravity="left"
         android:paddingTop="5dp"
         android:text="@string/definition"
+        android:layout_below="@+id/russianWord"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <TextView
@@ -30,6 +31,31 @@
         android:gravity="left"
         android:text="@string/part_of_speech"
         android:textStyle="italic"
+        android:layout_below="@+id/englishDefinition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imageViewBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/block" />
+
+    <ImageView
+        android:id="@+id/imageViewRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/refresh" />
+    
+    <ImageView
+        android:id="@+id/imageViewRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/internet" />
+
+</RelativeLayout>
