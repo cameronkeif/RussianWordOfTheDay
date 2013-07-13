@@ -4,5 +4,7 @@
     <string name="app_name">Russian Word Of The Day</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    
+    <color name="off_white">#DDEEEEEE</color>
 
 </resources>
