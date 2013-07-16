@@ -35,7 +35,7 @@
 <translation word="еще" parts="adverb" definition="still; yet; more" />
 <translation word="такой" parts="pronoun" definition="such" />
 <translation word="только" parts="adverb" definition="only" />
-<translation word="себя" parts="pronoun" definition="myself; himself; herself; itself" />
+<translation word="себя" parts="pronoun" definition="myself; himself; itself" />
 <translation word="свое" parts="pronoun" definition="its; own" />
 <translation word="какой" parts="pronoun" definition="what; which" />
 <translation word="для" parts="preposition" definition="for" />
@@ -827,7 +827,7 @@
 <translation word="желание" parts="noun" definition="desire" />
 <translation word="болезнь" parts="noun" definition="illness" />
 <translation word="вызывать" parts="verb" definition="to cause" />
-<translation word="называться" parts="verb" definition="be referred to as; to be called" />
+<translation word="называться" parts="verb" definition="to be called" />
 <translation word="встретить" parts="verb" definition="to meet" />
 <translation word="сосед" parts="noun" definition="neighbour" />
 <translation word="пример" parts="noun" definition="example" />
