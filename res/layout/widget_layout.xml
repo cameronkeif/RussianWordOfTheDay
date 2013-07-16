@@ -12,7 +12,6 @@
         android:gravity="center"
         android:textColor="@color/off_white"
         android:text="@string/russian_word"
-        android:layout_toLeftOf="@+id/imageViewBlock"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <TextView
@@ -22,7 +21,6 @@
         android:gravity="left"
         android:paddingTop="5dp"
         android:text="@string/definition"
-        android:layout_toLeftOf="@+id/imageViewBlock"
         android:layout_below="@+id/russianWord"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
@@ -34,31 +32,41 @@
         android:text="@string/part_of_speech"
         android:textStyle="italic"
         android:layout_below="@+id/englishDefinition"
-        android:layout_toLeftOf="@+id/imageViewBlock"
         android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <ImageView
-        android:id="@+id/imageViewBlock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/block" />
-
-    <ImageView
-        android:id="@+id/imageViewRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/refresh" />
     
     <ImageView
-        android:id="@+id/imageViewRefresh"
+        android:id="@+id/imageViewInternet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:src="@drawable/internet" />
 
+    <ImageView
+        android:id="@+id/imageViewRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewInternet"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/refresh" />
+
+    <ImageView
+        android:id="@+id/imageViewBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageViewRefresh"
+        android:src="@drawable/block" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+    
 </RelativeLayout>
