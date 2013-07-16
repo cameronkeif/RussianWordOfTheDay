@@ -19,7 +19,6 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	String mPartsOfSpeech = "";
 	
 	public RussianWOTDWidgetProvider() {
-		// TODO Auto-generated constructor stub
 	}
 
 	 public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
