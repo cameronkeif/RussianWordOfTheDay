@@ -15,7 +15,7 @@ import android.widget.RemoteViews;
 
 public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	String mRussianWord   = "";
-	String mDefintion     = "";
+	String mDefinition     = "";
 	String mPartsOfSpeech = "";
 	
 	public RussianWOTDWidgetProvider() {
@@ -37,7 +37,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
            parseXML( context, wordNumber );
            
            views.setTextViewText( R.id.russianWord, mRussianWord );
-           views.setTextViewText( R.id.englishDefinition, mDefintion );
+           views.setTextViewText( R.id.englishDefinition, mDefinition );
            views.setTextViewText( R.id.partOfSpeech, mPartsOfSpeech );
    
            // Tell the AppWidgetManager to perform an update on the current app widget
@@ -62,7 +62,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 			 while (eventType != XmlPullParser.END_DOCUMENT && index <= wordNumber ) {
 		          if(eventType == XmlPullParser.START_TAG) {
 		              System.out.println("Start tag "+xrp.getName());
-		              mDefintion = xrp.getAttributeValue( null, "definition" );
+		              mDefinition = xrp.getAttributeValue( null, "definition" );
 		              mPartsOfSpeech = xrp.getAttributeValue( null, "parts" );
 		              mRussianWord = xrp.getAttributeValue( null, "word" );
 	                  index++;

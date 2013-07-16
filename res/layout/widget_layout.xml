@@ -12,6 +12,7 @@
         android:gravity="center"
         android:textColor="@color/off_white"
         android:text="@string/russian_word"
+        android:layout_toLeftOf="@+id/imageViewBlock"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <TextView
@@ -21,6 +22,7 @@
         android:gravity="left"
         android:paddingTop="5dp"
         android:text="@string/definition"
+        android:layout_toLeftOf="@+id/imageViewBlock"
         android:layout_below="@+id/russianWord"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
@@ -32,6 +34,7 @@
         android:text="@string/part_of_speech"
         android:textStyle="italic"
         android:layout_below="@+id/englishDefinition"
+        android:layout_toLeftOf="@+id/imageViewBlock"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <ImageView
