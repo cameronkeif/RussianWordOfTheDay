@@ -2,6 +2,7 @@ package edu.msu.keifcame.russianwordoftheday;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Hashtable;
 import java.util.Random;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -24,16 +25,21 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	Random mIndexGenerator = new Random();
 	
 	private static final String REFRESH_CLICKED = "refreshButtonClick";
-	
+
 	// Initialize to be out of range
-	private static int sLastWordNumber= 3000;
+	private static int                        sLastWordNumber = 3000;
 	
+	private static Hashtable<Integer, String> sLastShownWord;
 	public RussianWOTDWidgetProvider() {
 	}
 
 	 public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 		final int N = appWidgetIds.length;
 
+		if ( sLastShownWord == null ) {
+		   sLastShownWord = new Hashtable<Integer, String>();
+		}
+		
         // Perform this loop procedure for each App Widget that belongs to this provider
         for (int i=0; i<N; i++) {
            int appWidgetId = appWidgetIds[i];
@@ -41,7 +47,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
            // Update text views
            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_layout);
            
-           updateViews( context, views );
+           updateViews( context, views, appWidgetId );
            
            views.setOnClickPendingIntent(R.id.imageViewRefresh, getPendingSelfIntent(context, REFRESH_CLICKED, appWidgetId));
            
@@ -50,7 +56,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
         }
 	 }
 	 
-	 private void updateViews( Context context, RemoteViews views ) {
+	 private void updateViews( Context context, RemoteViews views, int widgetId ) {
 	    int wordNumber = mIndexGenerator.nextInt( 1999 );
 	    
 	    // Make sure we don't end up with the same number as last time!
@@ -65,6 +71,8 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
         views.setTextViewText( R.id.russianWord, mRussianWord );
         views.setTextViewText( R.id.englishDefinition, mDefinition );
         views.setTextViewText( R.id.partOfSpeech, mPartsOfSpeech );
+        
+        sLastShownWord.put( widgetId, mRussianWord );
 	 }
 	 
 	 /**
@@ -110,7 +118,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	       views.setViewVisibility( R.id.progressBar, View.VISIBLE );
 	       appWidgetManager.updateAppWidget( widgetId, views );
 	       
-	       updateViews( context, views );
+	       updateViews( context, views, widgetId );
 	       views.setViewVisibility( R.id.progressBar, View.GONE );
 
 	       appWidgetManager.updateAppWidget( widgetId, views );
