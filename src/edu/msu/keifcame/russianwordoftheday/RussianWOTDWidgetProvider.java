@@ -26,7 +26,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	
 	private static final String REFRESH_CLICKED = "refreshButtonClick";
 	private static final String BLOCK_CLICKED   = "blockButonClick";
-	private static final int    NUMBER_OF_WORDS = 36;
+	private static final int    NUMBER_OF_WORDS = 1999;
 	
 	private static Hashtable<Integer, String> sLastShownWord;
 	public RussianWOTDWidgetProvider() {
@@ -88,7 +88,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
       */
 	 private void parseXML( Context context, int wordNumber ) {
 	    try {
-		   InputStream istr = context.getAssets().open("definitions_test_set.xml");
+		   InputStream istr = context.getAssets().open("definitions.xml");
 		   XmlPullParserFactory factory = XmlPullParserFactory.newInstance(); 
 	       factory.setNamespaceAware(true); 
 		   XmlPullParser xrp = factory.newPullParser(); 
