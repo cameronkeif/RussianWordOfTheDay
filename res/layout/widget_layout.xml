@@ -69,4 +69,21 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true" />
     
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FF0000"
+    android:visibility="gone"
+    android:id="@+id/allWordsBlockedWarning"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="All blocked."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+    
 </RelativeLayout>

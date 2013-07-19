@@ -25,9 +25,8 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	Random mIndexGenerator = new Random();
 	
 	private static final String REFRESH_CLICKED = "refreshButtonClick";
-
-	// Initialize to be out of range
-	private static int                        sLastWordNumber = 3000;
+	private static final String BLOCK_CLICKED   = "blockButonClick";
+	private static final int    NUMBER_OF_WORDS = 36;
 	
 	private static Hashtable<Integer, String> sLastShownWord;
 	public RussianWOTDWidgetProvider() {
@@ -50,28 +49,36 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
            updateViews( context, views, appWidgetId );
            
            views.setOnClickPendingIntent(R.id.imageViewRefresh, getPendingSelfIntent(context, REFRESH_CLICKED, appWidgetId));
-           
+           views.setOnClickPendingIntent(R.id.imageViewBlock, getPendingSelfIntent(context, BLOCK_CLICKED, appWidgetId));
            // Tell the AppWidgetManager to perform an update on the current app widget
            appWidgetManager.updateAppWidget(appWidgetId, views);
         }
 	 }
 	 
 	 private void updateViews( Context context, RemoteViews views, int widgetId ) {
-	    int wordNumber = mIndexGenerator.nextInt( 1999 );
+	    DatabaseHelper db = new DatabaseHelper( context );
+	    if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
+           views.setViewVisibility( R.id.allWordsBlockedWarning, View.VISIBLE );
+           return;
+        }
 	    
-	    // Make sure we don't end up with the same number as last time!
-	    while ( wordNumber == sLastWordNumber ) {
-	       wordNumber = mIndexGenerator.nextInt( 1999 );
-	    }
+	    int wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
 	    
-	    sLastWordNumber = wordNumber;
+	    // Keep parsing the XML for a new word, until we get one that is not blocked.
+	    do {
+	       wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
+	        
+	       parseXML( context, wordNumber );
+	    } while ( mRussianWord == "" || db.wordBlocked( mRussianWord ) );
+	    db.close();
 	    
-	    parseXML( context, wordNumber );
-        
         views.setTextViewText( R.id.russianWord, mRussianWord );
         views.setTextViewText( R.id.englishDefinition, mDefinition );
         views.setTextViewText( R.id.partOfSpeech, mPartsOfSpeech );
         
+        if ( sLastShownWord == null ) {
+           sLastShownWord = new Hashtable<Integer, String>();
+        }
         sLastShownWord.put( widgetId, mRussianWord );
 	 }
 	 
@@ -81,7 +88,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
       */
 	 private void parseXML( Context context, int wordNumber ) {
 	    try {
-		   InputStream istr = context.getAssets().open("definitions.xml");
+		   InputStream istr = context.getAssets().open("definitions_test_set.xml");
 		   XmlPullParserFactory factory = XmlPullParserFactory.newInstance(); 
 	       factory.setNamespaceAware(true); 
 		   XmlPullParser xrp = factory.newPullParser(); 
@@ -98,6 +105,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 		      }
 		      eventType = xrp.next();
 		   }
+		   
 	    } catch ( IOException e ) {
 	       e.printStackTrace();
 	    } catch ( XmlPullParserException e ) {
@@ -108,20 +116,24 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	 @Override
 	 public void onReceive( Context context, Intent intent ) {
 	    super.onReceive( context, intent );
-	       
+	    int widgetId = intent.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1);
+	    
 	    if ( REFRESH_CLICKED.equals( intent.getAction() ) ) {
-           AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
-           RemoteViews views = new RemoteViews( context.getPackageName(), R.layout.widget_layout );
+           refreshViews( context, widgetId );
+	    } else if ( BLOCK_CLICKED.equals( intent.getAction() ) ) {
+	       String wordToBlock = "";
            
-           int widgetId = intent.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1);
+           if ( sLastShownWord != null ) {
+              wordToBlock = sLastShownWord.get( widgetId );
+           }
            
-	       views.setViewVisibility( R.id.progressBar, View.VISIBLE );
-	       appWidgetManager.updateAppWidget( widgetId, views );
-	       
-	       updateViews( context, views, widgetId );
-	       views.setViewVisibility( R.id.progressBar, View.GONE );
-
-	       appWidgetManager.updateAppWidget( widgetId, views );
+           DatabaseHelper db = new DatabaseHelper( context );
+           if ( !db.wordBlocked( wordToBlock ) ) {
+              db.addWord( wordToBlock );
+           }
+           db.close();
+           
+           refreshViews( context, widgetId );
 	    }
 	 }
 	 
@@ -131,4 +143,17 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
         intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
         return PendingIntent.getBroadcast(context, appWidgetId, intent, 0);
     }
+	 
+	 private void refreshViews( Context context, int widgetId) {
+	    AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
+        RemoteViews views = new RemoteViews( context.getPackageName(), R.layout.widget_layout );
+        
+        views.setViewVisibility( R.id.progressBar, View.VISIBLE );
+        appWidgetManager.updateAppWidget( widgetId, views );
+        
+        updateViews( context, views, widgetId );
+        views.setViewVisibility( R.id.progressBar, View.GONE );
+
+        appWidgetManager.updateAppWidget( widgetId, views );
+	 }
 }

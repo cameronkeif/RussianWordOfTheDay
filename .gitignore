@@ -162,3 +162,4 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+assets/definitions_test_set.xml
