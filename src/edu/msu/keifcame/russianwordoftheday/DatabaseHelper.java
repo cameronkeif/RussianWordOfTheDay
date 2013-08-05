@@ -9,17 +9,18 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
    private static final String TABLE_NAME = "BlockedWords";
    private static final String COLUMN_WORDS = "WORDS";
+   private static final String COLUMN_ID    = "_id";
    private static final String DATABASE_NAME = "blocked.words.db";
    
+   public static final int     BLOCKED_WORD_INDEX = 1;
    public DatabaseHelper( Context context) {
-      // TODO Auto-generated constructor stub
       super( context, DATABASE_NAME, null, 33 );
    }
 
    @Override
    public void onCreate( SQLiteDatabase db ) {
       try {
-         db.execSQL( "CREATE TABLE " + TABLE_NAME + " (" + COLUMN_WORDS + " VARCHAR PRIMARY KEY);" );
+         db.execSQL( "CREATE TABLE " + TABLE_NAME + " (" + COLUMN_ID + " INT PRIMARY KEY, "+ COLUMN_WORDS + " VARCHAR);" );
       } catch ( Exception e ) {
          e.printStackTrace();
       }
@@ -50,13 +51,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
    }
    
    public int getNumberOfBlockedWords() {
-      SQLiteDatabase db = this.getReadableDatabase();
-      
-      Cursor cursor = db.rawQuery("select * from " + TABLE_NAME, null ); 
-      return cursor.getCount();
+      return getBlockedWordsCursor().getCount();
    }
    
-   public String findAllBlockedWords() {
-      return "";
+   public Cursor getBlockedWordsCursor() {
+      SQLiteDatabase db = this.getReadableDatabase();
+      
+      return db.rawQuery("select * from " + TABLE_NAME, null ); 
+   }
+   
+   public void removeWord( String word ) {
+      SQLiteDatabase db = this.getReadableDatabase();
+      
+      db.delete( TABLE_NAME, COLUMN_WORDS + "='" + word + "'", null );
    }
 }

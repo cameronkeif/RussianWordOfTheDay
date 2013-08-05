@@ -10,6 +10,9 @@
     <string name="part_of_speech">Part of Speech</string>
     <string name="all_words_blocked">All words blocked.</string>
     
+    <string name="remove_blocked_word_dialog_title_1">Remove</string>
+    <string name="remove_blocked_word_dialog_title_2">from list of blocked words?</string>
+    <string name="blocked_words_list_title">Blocked Words</string>
+    
     <color name="off_white">#DDEEEEEE</color>
-
 </resources>
