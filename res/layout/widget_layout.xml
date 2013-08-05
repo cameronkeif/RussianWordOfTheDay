@@ -81,7 +81,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="All blocked."
+        android:text="@string/all_words_blocked"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

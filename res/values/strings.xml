@@ -8,6 +8,8 @@
     <string name="russian_word">Russian Word</string>
     <string name="definition">Definition</string>
     <string name="part_of_speech">Part of Speech</string>
+    <string name="all_words_blocked">All words blocked.</string>
+    
     <color name="off_white">#DDEEEEEE</color>
 
 </resources>
