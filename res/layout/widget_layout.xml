@@ -34,26 +34,29 @@
         android:layout_below="@+id/englishDefinition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
-    <ImageView
+    <ImageButton
         android:id="@+id/imageViewSearch"
         android:layout_width="wrap_content"
+        android:background="@null"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:src="@drawable/search" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageViewRefresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@null"
         android:layout_alignTop="@+id/imageViewSearch"
         android:layout_centerHorizontal="true"
         android:src="@drawable/refresh" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageViewBlock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@null"
         android:layout_alignParentLeft="true"
         android:layout_alignTop="@+id/imageViewRefresh"
         android:src="@drawable/block" />
