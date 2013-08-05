@@ -35,12 +35,12 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <ImageView
-        android:id="@+id/imageViewInternet"
+        android:id="@+id/imageViewSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/internet" />
+        android:src="@drawable/search" />
 
     <ImageView
         android:id="@+id/imageViewRefresh"
