@@ -14,6 +14,7 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.View;
 import android.widget.RemoteViews;
 
@@ -26,7 +27,10 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	
 	private static final String REFRESH_CLICKED = "refreshButtonClick";
 	private static final String BLOCK_CLICKED   = "blockButonClick";
+	private static final String SEARCH_CLICKED  = "searchButtonClick";
 	private static final int    NUMBER_OF_WORDS = 1999;
+	
+	private static final String BASE_WIKTIONARY_URL = "http://en.wiktionary.org/wiki/";
 	
 	private static Hashtable<Integer, String> sLastShownWord;
 	public RussianWOTDWidgetProvider() {
@@ -50,6 +54,8 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
            
            views.setOnClickPendingIntent(R.id.imageViewRefresh, getPendingSelfIntent(context, REFRESH_CLICKED, appWidgetId));
            views.setOnClickPendingIntent(R.id.imageViewBlock, getPendingSelfIntent(context, BLOCK_CLICKED, appWidgetId));
+           views.setOnClickPendingIntent(R.id.imageViewSearch, getPendingSelfIntent(context, SEARCH_CLICKED, appWidgetId));
+           
            // Tell the AppWidgetManager to perform an update on the current app widget
            appWidgetManager.updateAppWidget(appWidgetId, views);
         }
@@ -134,6 +140,15 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
            db.close();
            
            refreshViews( context, widgetId );
+	    } else if ( SEARCH_CLICKED.equals( intent.getAction() ) ) {
+	       String wordToSearchFor = "";
+	       if ( sLastShownWord != null ) {
+              wordToSearchFor = sLastShownWord.get( widgetId );
+           }
+	       
+	       Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(BASE_WIKTIONARY_URL + wordToSearchFor ));
+	       browserIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
+	       context.startActivity(browserIntent); 
 	    }
 	 }
 	 
