@@ -37,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:contentDescription="@string/search_content_description"
         android:src="@drawable/search" />
 
     <ImageButton
@@ -46,6 +47,7 @@
         android:background="@color/black_background"
         android:layout_alignTop="@+id/imageViewSearch"
         android:layout_centerHorizontal="true"
+        android:contentDescription="@string/refresh_content_description"
         android:src="@drawable/refresh" />
 
     <ImageButton
@@ -55,6 +57,7 @@
         android:background="@color/black_background"
         android:layout_alignParentLeft="true"
         android:layout_alignTop="@+id/imageViewRefresh"
+        android:contentDescription="@string/blocked_content_description"
         android:src="@drawable/block" />
 
     <ProgressBar

@@ -14,6 +14,10 @@
     <string name="remove_blocked_word_dialog_title_1">Remove</string>
     <string name="remove_blocked_word_dialog_title_2">from list of blocked words?</string>
     <string name="blocked_words_list_title">Blocked Words</string>
+
+    <string name="blocked_content_description">Block word</string>
+    <string name="refresh_content_description">Refresh word</string>
+    <string name="search_content_description">Search wikitionary for word</string>
     
     <color name="off_white">#DDEEEEEE</color>
     <color name="black_background">#99111111</color>
