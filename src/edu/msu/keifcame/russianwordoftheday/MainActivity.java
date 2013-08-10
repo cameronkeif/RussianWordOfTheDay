@@ -98,16 +98,5 @@ public class MainActivity extends Activity {
 	
 	private void updateList() {
 	   ( (CursorAdapter) mBlockedWordsList.getAdapter() ).swapCursor( mDBHelper.getBlockedWordsCursor() );
-	   updateWidgets();
-	}
-	
-	private void updateWidgets() {
-	   Intent intent = new Intent(this, RussianWOTDWidgetProvider.class);
-	   intent.setAction("android.appwidget.action.APPWIDGET_UPDATE"); 
-	   // Use an array and EXTRA_APPWIDGET_IDS instead of AppWidgetManager.EXTRA_APPWIDGET_ID, 
-	   // since it seems the onUpdate() is only fired on that: 
-	   int ids[] = AppWidgetManager.getInstance(getApplication()).getAppWidgetIds(new ComponentName(getApplication(), RussianWOTDWidgetProvider.class));
-	   intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS,ids); 
-	   sendBroadcast(intent); 
 	}
 }

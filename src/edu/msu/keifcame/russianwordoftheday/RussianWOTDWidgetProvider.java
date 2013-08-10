@@ -28,7 +28,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	private static final String REFRESH_CLICKED = "refreshButtonClick";
 	private static final String BLOCK_CLICKED   = "blockButonClick";
 	private static final String SEARCH_CLICKED  = "searchButtonClick";
-	private static final int    NUMBER_OF_WORDS = 10;
+	private static final int    NUMBER_OF_WORDS = 1999;
 	
 	private static final String BASE_WIKTIONARY_URL = "http://en.wiktionary.org/wiki/";
 	
@@ -64,10 +64,11 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	 private void updateViews( Context context, RemoteViews views, int widgetId ) {
 	    DatabaseHelper db = new DatabaseHelper( context );
 	    if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
-           views.setViewVisibility( R.id.allWordsBlockedWarning, View.VISIBLE );
+	       showAllBlockedWarning( views, context );
            return;
         } else {
-           views.setViewVisibility( R.id.allWordsBlockedWarning, View.GONE );
+           views.setTextColor( R.id.russianWord, context.getResources().getColor( R.color.off_white ) );
+           views.setTextColor( R.id.englishDefinition, context.getResources().getColor( R.color.off_white ) );
         }
 	    
 	    int wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
@@ -96,7 +97,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
       */
 	 private void parseXML( Context context, int wordNumber ) {
 	    try {
-		   InputStream istr = context.getAssets().open("definitions_test_set.xml");
+		   InputStream istr = context.getAssets().open("definitions.xml");
 		   XmlPullParserFactory factory = XmlPullParserFactory.newInstance(); 
 	       factory.setNamespaceAware(true); 
 		   XmlPullParser xrp = factory.newPullParser(); 
@@ -172,5 +173,14 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
         views.setViewVisibility( R.id.progressBar, View.GONE );
 
         appWidgetManager.updateAppWidget( widgetId, views );
+	 }
+	 
+	 private void showAllBlockedWarning( RemoteViews views, Context context ) {
+	    views.setTextViewText( R.id.russianWord, context.getString( R.string.all_words_blocked ) );
+        views.setTextColor( R.id.russianWord, context.getResources().getColor( R.color.warning_red ) );
+
+        views.setTextViewText( R.id.englishDefinition, context.getString( R.string.all_words_blocked_explanation ) );
+        views.setTextColor( R.id.englishDefinition, context.getResources().getColor( R.color.warning_red ) );
+        views.setTextViewText( R.id.partOfSpeech, "" );
 	 }
 }
