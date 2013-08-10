@@ -2,8 +2,11 @@ package edu.msu.keifcame.russianwordoftheday;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.appwidget.AppWidgetManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.widget.CursorAdapter;
@@ -95,5 +98,16 @@ public class MainActivity extends Activity {
 	
 	private void updateList() {
 	   ( (CursorAdapter) mBlockedWordsList.getAdapter() ).swapCursor( mDBHelper.getBlockedWordsCursor() );
+	   updateWidgets();
+	}
+	
+	private void updateWidgets() {
+	   Intent intent = new Intent(this, RussianWOTDWidgetProvider.class);
+	   intent.setAction("android.appwidget.action.APPWIDGET_UPDATE"); 
+	   // Use an array and EXTRA_APPWIDGET_IDS instead of AppWidgetManager.EXTRA_APPWIDGET_ID, 
+	   // since it seems the onUpdate() is only fired on that: 
+	   int ids[] = AppWidgetManager.getInstance(getApplication()).getAppWidgetIds(new ComponentName(getApplication(), RussianWOTDWidgetProvider.class));
+	   intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS,ids); 
+	   sendBroadcast(intent); 
 	}
 }
