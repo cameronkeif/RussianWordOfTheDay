@@ -18,7 +18,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:paddingTop="5dp"
         android:layout_below="@+id/russianWord"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
@@ -34,7 +33,7 @@
     <ImageButton
         android:id="@+id/imageViewSearch"
         android:layout_width="wrap_content"
-        android:background="@null"
+        android:background="@color/black_background"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -44,7 +43,7 @@
         android:id="@+id/imageViewRefresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@null"
+        android:background="@color/black_background"
         android:layout_alignTop="@+id/imageViewSearch"
         android:layout_centerHorizontal="true"
         android:src="@drawable/refresh" />
@@ -53,7 +52,7 @@
         android:id="@+id/imageViewBlock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@null"
+        android:background="@color/black_background"
         android:layout_alignParentLeft="true"
         android:layout_alignTop="@+id/imageViewRefresh"
         android:src="@drawable/block" />

@@ -19,9 +19,9 @@ import android.view.View;
 import android.widget.RemoteViews;
 
 public class RussianWOTDWidgetProvider extends AppWidgetProvider {
-	String mRussianWord    = "";
-	String mDefinition     = "";
-	String mPartsOfSpeech  = "";
+	String mRussianWord    = "наступить";
+	String mDefinition     = "to begin; act on the offensive";
+	String mPartsOfSpeech  = "verb";
 	
 	Random mIndexGenerator = new Random();
 	
@@ -31,6 +31,8 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	private static final int    NUMBER_OF_WORDS = 1999;
 	
 	private static final String BASE_WIKTIONARY_URL = "http://en.wiktionary.org/wiki/";
+	
+	private static final boolean PICK = true;
 	
 	private static Hashtable<Integer, String> sLastShownWord;
 	public RussianWOTDWidgetProvider() {
@@ -62,6 +64,12 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	 }
 	 
 	 private void updateViews( Context context, RemoteViews views, int widgetId ) {
+	    if ( !PICK ) {
+	        views.setTextViewText( R.id.russianWord, mRussianWord );
+	        views.setTextViewText( R.id.englishDefinition, mDefinition );
+	        views.setTextViewText( R.id.partOfSpeech, mPartsOfSpeech );
+	       return;
+	    }
 	    DatabaseHelper db = new DatabaseHelper( context );
 	    if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
            views.setViewVisibility( R.id.allWordsBlockedWarning, View.VISIBLE );

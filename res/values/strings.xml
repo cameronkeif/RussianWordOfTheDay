@@ -15,4 +15,5 @@
     <string name="blocked_words_list_title">Blocked Words</string>
     
     <color name="off_white">#DDEEEEEE</color>
+    <color name="black_background">#99111111</color>
 </resources>
