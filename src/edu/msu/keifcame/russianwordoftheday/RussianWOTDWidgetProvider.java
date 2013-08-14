@@ -85,6 +85,8 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
         views.setTextViewText( R.id.englishDefinition, mDefinition );
         views.setTextViewText( R.id.partOfSpeech, mPartsOfSpeech );
         
+        db.addRecentWord( mRussianWord, mDefinition );
+        
         if ( sLastShownWord == null ) {
            sLastShownWord = new Hashtable<Integer, String>();
         }
@@ -138,7 +140,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
            
            DatabaseHelper db = new DatabaseHelper( context );
            if ( !db.wordBlocked( wordToBlock ) ) {
-              db.addWord( wordToBlock );
+              db.addBlockedWord( wordToBlock );
            }
            db.close();
            

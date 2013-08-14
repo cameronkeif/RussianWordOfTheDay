@@ -19,6 +19,8 @@
     <string name="refresh_content_description">Refresh word</string>
     <string name="search_content_description">Search wikitionary for word</string>
     
+    <string name="recent_words_list_title">Recent Words</string>
+    
     <color name="off_white">#DDEEEEEE</color>
     <color name="black_background">#99111111</color>
     <color name="warning_red">#DDEE9999</color>
