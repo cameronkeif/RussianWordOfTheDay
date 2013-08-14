@@ -56,10 +56,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
    public void addRecentWord( String word, String definition ) {
       SQLiteDatabase db = this.getWritableDatabase();
    
-      if ( getRecentWordsCursor().getCount() > 100 ) {
-         removeOldestWordFromRecentTable();
-      }
-      
       ContentValues values = new ContentValues();
       values.put( COLUMN_WORDS, word );
       values.put( COLUMN_DEFINITION, definition );
@@ -67,12 +63,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
       // Inserting Row
       db.insert(TABLE_NAME_RECENT, null, values);
       db.close();
-   }
-   
-   private void removeOldestWordFromRecentTable() {
-      SQLiteDatabase db = getWritableDatabase();
-      
-      db.rawQuery("select * from " + TABLE_NAME_RECENT + " where " + COLUMN_ID + "=", new String[] { "(SELECT " + COLUMN_ID +" FROM " + TABLE_NAME_RECENT + " order by " + COLUMN_ID + " limit 1)" }); 
    }
    
    public boolean wordBlocked( String word ) {
@@ -95,7 +85,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
    public Cursor getRecentWordsCursor() {
       SQLiteDatabase db = this.getReadableDatabase();
       
-      return db.rawQuery("select * from " + TABLE_NAME_RECENT + " order by " + COLUMN_ID + " desc", null ); 
+      return db.rawQuery("select * from " + TABLE_NAME_RECENT + " order by " + COLUMN_ID + " desc limit 100", null ); 
    }
    
    public void removeWord( String word ) {
