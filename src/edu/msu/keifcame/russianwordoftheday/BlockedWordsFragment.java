@@ -35,7 +35,7 @@ public class BlockedWordsFragment extends WordListFragment {
       
       final DatabaseHelper db = mDBHelper;
 
-      final CursorAdapter adapter = new CursorAdapter( getActivity(), db.getRecentWordsCursor(), CursorAdapter.NO_SELECTION ) {
+      final CursorAdapter adapter = new CursorAdapter( getActivity(), db.getBlockedWordsCursor(), CursorAdapter.NO_SELECTION ) {
        
        @Override
        public View newView( Context context, Cursor cursor, ViewGroup parent ) {
