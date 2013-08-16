@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/widget_background"
-    android:orientation="vertical" >
+    android:layout_height="match_parent" >
 
     <TextView
         android:id="@+id/russianWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="@color/off_white"
+        android:textColor="@color/blue"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <TextView
@@ -19,6 +17,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:layout_below="@+id/russianWord"
+        android:textColor="@color/blue"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <TextView
@@ -28,6 +27,7 @@
         android:gravity="left"
         android:textStyle="italic"
         android:layout_below="@+id/englishDefinition"
+        android:textColor="@color/blue"
         android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <ImageButton
@@ -59,16 +59,4 @@
         android:layout_alignTop="@+id/imageViewRefresh"
         android:contentDescription="@string/blocked_content_description"
         android:src="@drawable/block" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" />
-    
 </RelativeLayout>

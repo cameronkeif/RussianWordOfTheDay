@@ -1,13 +1,6 @@
 package edu.msu.keifcame.russianwordoftheday;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Hashtable;
 import java.util.Random;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -32,16 +25,11 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	
 	private static final String BASE_WIKTIONARY_URL = "http://en.wiktionary.org/wiki/";
 	
-	private static Hashtable<Integer, String> sLastShownWord;
 	public RussianWOTDWidgetProvider() {
 	}
 
 	 public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 		final int N = appWidgetIds.length;
-
-		if ( sLastShownWord == null ) {
-		   sLastShownWord = new Hashtable<Integer, String>();
-		}
 		
         // Perform this loop procedure for each App Widget that belongs to this provider
         for (int i=0; i<N; i++) {
@@ -63,65 +51,29 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	 
 	 private void updateViews( Context context, RemoteViews views, int widgetId ) {
 	    DatabaseHelper db = new DatabaseHelper( context );
-	    if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
-	       showAllBlockedWarning( views, context );
+        if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
+           showAllBlockedWarning( views, context );
            return;
-        } else {
-           views.setTextColor( R.id.russianWord, context.getResources().getColor( R.color.off_white ) );
-           views.setTextColor( R.id.englishDefinition, context.getResources().getColor( R.color.off_white ) );
         }
 	    
-	    int wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
+        db.close();
+        
+	    mRussianWord   = WordFragment.getRussianWord();
+	    mDefinition    = WordFragment.getEnglishDefinition();
+	    mPartsOfSpeech = WordFragment.getPartOfSpeech();
 	    
-	    // Keep parsing the XML for a new word, until we get one that is not blocked.
-	    do {
-	       wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
-	        
-	       parseXML( context, wordNumber );
-	    } while ( mRussianWord == "" || db.wordBlocked( mRussianWord ) );
-	    db.close();
+	    if ( mRussianWord.isEmpty() || mDefinition.isEmpty() || mPartsOfSpeech.isEmpty() ||
+	         mRussianWord == null   || mDefinition == null   || mPartsOfSpeech == null ) {
+	       WordFragment.updateWord( mIndexGenerator.nextInt( NUMBER_OF_WORDS ), context );
+	       
+	       mRussianWord   = WordFragment.getRussianWord();
+	       mDefinition    = WordFragment.getEnglishDefinition();
+	       mPartsOfSpeech = WordFragment.getPartOfSpeech();
+	    }
 	    
         views.setTextViewText( R.id.russianWord, mRussianWord );
         views.setTextViewText( R.id.englishDefinition, mDefinition );
         views.setTextViewText( R.id.partOfSpeech, mPartsOfSpeech );
-        
-        db.addRecentWord( mRussianWord, mDefinition, mPartsOfSpeech );
-        
-        if ( sLastShownWord == null ) {
-           sLastShownWord = new Hashtable<Integer, String>();
-        }
-        sLastShownWord.put( widgetId, mRussianWord );
-	 }
-	 
-	 /**
-      * Parse the definitions xml file
-      * @param wordNumber [0, 1998] represents the line of the xml file
-      */
-	 private void parseXML( Context context, int wordNumber ) {
-	    try {
-		   InputStream istr = context.getAssets().open("definitions.xml");
-		   XmlPullParserFactory factory = XmlPullParserFactory.newInstance(); 
-	       factory.setNamespaceAware(true); 
-		   XmlPullParser xrp = factory.newPullParser(); 
-		   xrp.setInput(istr, "UTF-8"); 
-			 
-		   int eventType = xrp.getEventType();
-		   int index = 0;
-		   while (eventType != XmlPullParser.END_DOCUMENT && index <= wordNumber ) {
-		      if(eventType == XmlPullParser.START_TAG) {
-		         mDefinition = xrp.getAttributeValue( null, "definition" );
-		         mPartsOfSpeech = xrp.getAttributeValue( null, "parts" );
-		         mRussianWord = xrp.getAttributeValue( null, "word" );
-		         index++;
-		      }
-		      eventType = xrp.next();
-		   }
-		   
-	    } catch ( IOException e ) {
-	       e.printStackTrace();
-	    } catch ( XmlPullParserException e ) {
-	       e.printStackTrace();
-		}
 	 }
 	 
 	 @Override
@@ -134,10 +86,6 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	    } else if ( BLOCK_CLICKED.equals( intent.getAction() ) ) {
 	       String wordToBlock = "";
            
-           if ( sLastShownWord != null ) {
-              wordToBlock = sLastShownWord.get( widgetId );
-           }
-           
            DatabaseHelper db = new DatabaseHelper( context );
            if ( !db.wordBlocked( wordToBlock ) ) {
               db.addBlockedWord( wordToBlock );
@@ -147,9 +95,6 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
            refreshViews( context, widgetId );
 	    } else if ( SEARCH_CLICKED.equals( intent.getAction() ) ) {
 	       String wordToSearchFor = "";
-	       if ( sLastShownWord != null ) {
-              wordToSearchFor = sLastShownWord.get( widgetId );
-           }
 	       
 	       Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(BASE_WIKTIONARY_URL + wordToSearchFor ));
 	       browserIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK );

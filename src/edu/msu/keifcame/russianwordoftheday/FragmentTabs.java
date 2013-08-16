@@ -16,6 +16,8 @@ public class FragmentTabs extends FragmentActivity {
       mTabHost = (FragmentTabHost)findViewById(android.R.id.tabhost);
       mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
       
+      mTabHost.addTab(mTabHost.newTabSpec("asdf").setIndicator("asdf"),
+            WordFragment.class, null);
       mTabHost.addTab(mTabHost.newTabSpec("simple").setIndicator("Simple"),
             BlockedWordsFragment.class, null);
       mTabHost.addTab(mTabHost.newTabSpec("contacts").setIndicator("Contacts"),
