@@ -26,13 +26,13 @@ public class RecentWordsFragment extends WordListFragment {
       final DatabaseHelper db = mDBHelper;
 
       final SimpleCursorTreeAdapter adapter = new SimpleCursorTreeAdapter( getActivity(), db.getRecentWordsCursor(),
-            android.R.layout.simple_expandable_list_item_1,
-            android.R.layout.simple_expandable_list_item_1,
-            new String[] { DatabaseHelper.COLUMN_WORDS },
-            new int[] { android.R.id.text1 },
-            android.R.layout.simple_expandable_list_item_1, 
+            R.layout.recent_list_element,
+            R.layout.recent_list_element,
+            new String[] { DatabaseHelper.COLUMN_WORDS, DatabaseHelper.COLUMN_PART_OF_SPEECH },
+            new int[] { R.id.russianWord, R.id.partOfSpeech },
+            R.layout.recent_list_element_child, 
             new String[] { DatabaseHelper.COLUMN_DEFINITION }, 
-            new int [] { android.R.id.text1 } ) {
+            new int [] { R.id.text1 } ) {
 
          @Override
          protected Cursor getChildrenCursor( Cursor groupCursor ) {

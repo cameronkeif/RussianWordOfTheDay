@@ -24,4 +24,5 @@
     <color name="off_white">#DDEEEEEE</color>
     <color name="black_background">#99111111</color>
     <color name="warning_red">#DDEE9999</color>
+    <color name="blue">#0000AA</color>
 </resources>

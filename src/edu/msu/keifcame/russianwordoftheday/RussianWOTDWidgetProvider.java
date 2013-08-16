@@ -85,7 +85,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
         views.setTextViewText( R.id.englishDefinition, mDefinition );
         views.setTextViewText( R.id.partOfSpeech, mPartsOfSpeech );
         
-        db.addRecentWord( mRussianWord, mDefinition );
+        db.addRecentWord( mRussianWord, mDefinition, mPartsOfSpeech );
         
         if ( sLastShownWord == null ) {
            sLastShownWord = new Hashtable<Integer, String>();

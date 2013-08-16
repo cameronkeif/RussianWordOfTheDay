@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:text="@string/blocked_words_list_title"
+        android:text="@string/recent_words_list_title"
         android:textStyle="bold"
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge" />

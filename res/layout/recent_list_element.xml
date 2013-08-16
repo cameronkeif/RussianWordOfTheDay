@@ -8,12 +8,17 @@
         android:id="@+id/russianWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="40dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/englishDefinition"
+        android:id="@+id/partOfSpeech"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:textStyle="italic"
+        android:layout_marginLeft="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </LinearLayout>
