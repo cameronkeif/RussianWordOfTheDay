@@ -7,14 +7,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-   private static final String DATABASE_NAME = "blocked.words.db";
+   private static final String DATABASE_NAME       = "blocked.words.db";
    
-   private static final String TABLE_NAME_BLOCKED   = "BlockedWords";
-   private static final String COLUMN_WORDS         = "WORDS";
-   private static final String COLUMN_ID            = "_id";
+   public static final String TABLE_NAME_BLOCKED   = "BlockedWords";
+   public static final String COLUMN_WORDS         = "WORDS";
+   public static final String COLUMN_ID            = "_id";
    
-   private static final String TABLE_NAME_RECENT    = "RecentWords";
-   private static final String COLUMN_DEFINITION    = "Defintion";
+   public static final String TABLE_NAME_RECENT    = "RecentWords";
+   public static final String COLUMN_DEFINITION    = "Defintion";
    
    public static final int     BLOCKED_WORD_INDEX = 1;
    public DatabaseHelper( Context context) {
@@ -86,6 +86,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
       SQLiteDatabase db = this.getReadableDatabase();
       
       return db.rawQuery("select * from " + TABLE_NAME_RECENT + " order by " + COLUMN_ID + " desc limit 100", null ); 
+   }
+   
+   public Cursor getRecentWordDefinition( String word ) {
+      SQLiteDatabase db = this.getReadableDatabase();
+      
+      return db.rawQuery("select * from " + TABLE_NAME_RECENT + " where " + COLUMN_WORDS + " = ?", new String[] { word }); 
    }
    
    public void removeWord( String word ) {

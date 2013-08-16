@@ -22,12 +22,12 @@
         android:layout_below="@+id/title"
         android:background="@android:color/black" />
     
-    <ListView
+    <ExpandableListView
         android:id="@+id/recentWordsList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/headerDivider" >
 
-    </ListView>
+    </ExpandableListView>
 </RelativeLayout>

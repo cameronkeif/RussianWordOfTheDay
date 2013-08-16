@@ -19,7 +19,7 @@ public class FragmentTabs extends FragmentActivity {
       mTabHost.addTab(mTabHost.newTabSpec("simple").setIndicator("Simple"),
             BlockedWordsFragment.class, null);
       mTabHost.addTab(mTabHost.newTabSpec("contacts").setIndicator("Contacts"),
-            BlockedWordsFragment.class, null);
+            RecentWordsFragment.class, null);
    }
 	
    @Override
