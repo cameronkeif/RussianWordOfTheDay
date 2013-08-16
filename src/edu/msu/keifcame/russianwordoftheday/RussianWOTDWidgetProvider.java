@@ -21,7 +21,6 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	private static final String REFRESH_CLICKED = "refreshButtonClick";
 	private static final String BLOCK_CLICKED   = "blockButonClick";
 	private static final String SEARCH_CLICKED  = "searchButtonClick";
-	private static final int    NUMBER_OF_WORDS = 1999;
 	
 	private static final String BASE_WIKTIONARY_URL = "http://en.wiktionary.org/wiki/";
 	
@@ -51,7 +50,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	 
 	 private void updateViews( Context context, RemoteViews views, int widgetId ) {
 	    DatabaseHelper db = new DatabaseHelper( context );
-        if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
+        if ( db.getNumberOfBlockedWords() >= WordFragment.NUMBER_OF_WORDS ) {
            showAllBlockedWarning( views, context );
            return;
         }
@@ -64,7 +63,7 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	    
 	    if ( mRussianWord.isEmpty() || mDefinition.isEmpty() || mPartsOfSpeech.isEmpty() ||
 	         mRussianWord == null   || mDefinition == null   || mPartsOfSpeech == null ) {
-	       WordFragment.updateWord( mIndexGenerator.nextInt( NUMBER_OF_WORDS ), context );
+	       WordFragment.updateWord( mIndexGenerator.nextInt( WordFragment.NUMBER_OF_WORDS ), context );
 	       
 	       mRussianWord   = WordFragment.getRussianWord();
 	       mDefinition    = WordFragment.getEnglishDefinition();

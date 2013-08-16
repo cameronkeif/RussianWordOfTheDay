@@ -16,8 +16,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView.FindListener;
-import android.widget.RemoteViews;
 import android.widget.TextView;
 
 public class WordFragment extends Fragment {
@@ -30,7 +28,7 @@ public class WordFragment extends Fragment {
    private static String sEnglishDefinition;
    private static String sPartOfSpeech;
    
-   private static final int NUMBER_OF_WORDS = 1999;
+   public  static final int NUMBER_OF_WORDS = 1999;
    
    Random mIndexGenerator = new Random();
    
