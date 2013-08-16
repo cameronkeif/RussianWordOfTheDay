@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/blue"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
     
     <TextView
         android:id="@+id/englishDefinition"
@@ -18,7 +18,7 @@
         android:gravity="left"
         android:layout_below="@+id/russianWord"
         android:textColor="@color/blue"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
     
     <TextView
         android:id="@+id/partOfSpeech"
@@ -28,7 +28,7 @@
         android:textStyle="italic"
         android:layout_below="@+id/englishDefinition"
         android:textColor="@color/blue"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
     
     <ImageButton
         android:id="@+id/imageViewSearch"

@@ -7,7 +7,8 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.RemoteViews;
 
@@ -21,8 +22,6 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	private static final String REFRESH_CLICKED = "refreshButtonClick";
 	private static final String BLOCK_CLICKED   = "blockButonClick";
 	private static final String SEARCH_CLICKED  = "searchButtonClick";
-	
-	private static final String BASE_WIKTIONARY_URL = "http://en.wiktionary.org/wiki/";
 	
 	public RussianWOTDWidgetProvider() {
 	}
@@ -55,20 +54,37 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
            return;
         }
 	    
-        db.close();
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences( context );
+        long lastUpdatedTime = preferences.getLong( WordFragment.LAST_UPDATED_TIME, 0 );
+        long currentTime = System.currentTimeMillis();
         
-	    mRussianWord   = WordFragment.getRussianWord();
-	    mDefinition    = WordFragment.getEnglishDefinition();
-	    mPartsOfSpeech = WordFragment.getPartOfSpeech();
-	    
-	    if ( mRussianWord.isEmpty() || mDefinition.isEmpty() || mPartsOfSpeech.isEmpty() ||
-	         mRussianWord == null   || mDefinition == null   || mPartsOfSpeech == null ) {
-	       WordFragment.updateWord( mIndexGenerator.nextInt( WordFragment.NUMBER_OF_WORDS ), context );
-	       
-	       mRussianWord   = WordFragment.getRussianWord();
-	       mDefinition    = WordFragment.getEnglishDefinition();
-	       mPartsOfSpeech = WordFragment.getPartOfSpeech();
-	    }
+        if ( currentTime - lastUpdatedTime >= 86400000 ) {
+           if ( db.getNumberOfBlockedWords() >= WordFragment.NUMBER_OF_WORDS ) {
+              showAllBlockedWarning( views, context );
+           } else {
+              views.setTextColor( R.id.russianWord, context.getResources().getColor( R.color.off_white ) );
+              views.setTextColor( R.id.englishDefinition, context.getResources().getColor( R.color.off_white ) );
+           
+              int wordNumber = mIndexGenerator.nextInt( WordFragment.NUMBER_OF_WORDS );
+              
+              // Keep parsing the XML for a new word, until we get one that is not blocked.
+              do {
+                 wordNumber = mIndexGenerator.nextInt( WordFragment.NUMBER_OF_WORDS );
+                  
+                 WordFragment.updateWord( wordNumber, context );
+                 
+                 mRussianWord   = WordFragment.getRussianWord();
+                 mDefinition    = WordFragment.getEnglishDefinition();
+                 mPartsOfSpeech = WordFragment.getPartOfSpeech();
+              } while ( mRussianWord == "" || db.wordBlocked( mRussianWord ) );
+              
+              db.close();
+           }
+        } else {
+           mRussianWord   = WordFragment.getRussianWord();
+           mDefinition    = WordFragment.getEnglishDefinition();
+           mPartsOfSpeech = WordFragment.getPartOfSpeech();
+        }
 	    
         views.setTextViewText( R.id.russianWord, mRussianWord );
         views.setTextViewText( R.id.englishDefinition, mDefinition );
@@ -83,21 +99,9 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
 	    if ( REFRESH_CLICKED.equals( intent.getAction() ) ) {
            refreshViews( context, widgetId );
 	    } else if ( BLOCK_CLICKED.equals( intent.getAction() ) ) {
-	       String wordToBlock = "";
-           
-           DatabaseHelper db = new DatabaseHelper( context );
-           if ( !db.wordBlocked( wordToBlock ) ) {
-              db.addBlockedWord( wordToBlock );
-           }
-           db.close();
-           
            refreshViews( context, widgetId );
 	    } else if ( SEARCH_CLICKED.equals( intent.getAction() ) ) {
-	       String wordToSearchFor = "";
 	       
-	       Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(BASE_WIKTIONARY_URL + wordToSearchFor ));
-	       browserIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
-	       context.startActivity(browserIntent); 
 	    }
 	 }
 	 

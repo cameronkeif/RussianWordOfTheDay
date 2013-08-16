@@ -29,36 +29,6 @@
         android:textStyle="italic"
         android:layout_below="@+id/englishDefinition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
-    
-    <ImageButton
-        android:id="@+id/imageViewSearch"
-        android:layout_width="wrap_content"
-        android:background="@null"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:contentDescription="@string/search_content_description"
-        android:src="@drawable/search" />
-
-    <ImageButton
-        android:id="@+id/imageViewRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:layout_alignTop="@+id/imageViewSearch"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/refresh_content_description"
-        android:src="@drawable/refresh" />
-
-    <ImageButton
-        android:id="@+id/imageViewBlock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/imageViewRefresh"
-        android:contentDescription="@string/blocked_content_description"
-        android:src="@drawable/block" />
 
     <ProgressBar
         android:id="@+id/progressBar"
