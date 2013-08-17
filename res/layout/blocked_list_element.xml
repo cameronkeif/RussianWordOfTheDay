@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:textColor="@color/blue"
         android:textAppearance="?android:attr/textAppearanceLarge" />
     
     <ImageButton 

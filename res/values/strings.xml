@@ -25,4 +25,5 @@
     <color name="black_background">#99111111</color>
     <color name="warning_red">#DDEE9999</color>
     <color name="blue">#0000AA</color>
+    <color name="tab_label_color">#FFD2DF</color>
 </resources>
