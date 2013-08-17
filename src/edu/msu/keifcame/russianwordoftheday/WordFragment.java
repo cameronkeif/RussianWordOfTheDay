@@ -206,9 +206,7 @@ public class WordFragment extends Fragment {
    }
    
    public void onClickSearch( View v ) {
-      String wordToSearchFor = "";
-      
-      Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(BASE_WIKTIONARY_URL + wordToSearchFor ));
+      Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(BASE_WIKTIONARY_URL + sRussianWord ));
       browserIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
       getActivity().startActivity(browserIntent); 
    }
