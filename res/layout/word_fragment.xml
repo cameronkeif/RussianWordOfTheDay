@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:layout_below="@+id/russianWord"
+        android:layout_below="@+id/partOfSpeech"
         android:textColor="@color/blue"
         android:textAppearance="?android:attr/textAppearanceLarge" />
     
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:textStyle="italic"
-        android:layout_below="@+id/englishDefinition"
+        android:layout_below="@+id/russianWord"
         android:textColor="@color/blue"
         android:textAppearance="?android:attr/textAppearanceLarge" />
     
