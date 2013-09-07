@@ -38,6 +38,7 @@ public class WordFragment extends Fragment {
    public  static final int NUMBER_OF_WORDS = 1999;
    
    Random mIndexGenerator = new Random();
+   DatabaseHelper mDatabaseHelper;
    
    public WordFragment() {
    }
@@ -45,6 +46,7 @@ public class WordFragment extends Fragment {
    @Override
    public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState ) {
       View v = inflater.inflate( R.layout.word_fragment, null );
+      mDatabaseHelper = new DatabaseHelper( getActivity() );
       
       SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences( getActivity() );
 
@@ -56,29 +58,18 @@ public class WordFragment extends Fragment {
       long currentTime = System.currentTimeMillis();
       if ( currentTime - lastUpdatedTime >= 86400000 ) {
          // update
-         DatabaseHelper db = new DatabaseHelper( getActivity() );
-         if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
-            showAllBlockedWarning( v, getActivity() );
-         } else {
-            ( (TextView) v.findViewById( R.id.russianWord ) ).setTextColor( getResources().getColor( R.color.blue ) );
-            ( (TextView) v.findViewById( R.id.englishDefinition ) ).setTextColor( getResources().getColor( R.color.blue ) );
-         
-         
-            int wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
-            
-            // Keep parsing the XML for a new word, until we get one that is not blocked.
-            do {
-               wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
-                
-               WordFragment.updateWord( wordNumber, getActivity() );
-            } while ( sRussianWord == "" || db.wordBlocked( sRussianWord ) );
-            db.close();
-         }
+         attemptUpdateWord();
       }
+
+      if ( mDatabaseHelper.getNumberOfBlockedWords() < NUMBER_OF_WORDS ) {
       
-      ( (TextView) v.findViewById( R.id.russianWord ) ).setText( sRussianWord );
-      ( (TextView) v.findViewById( R.id.englishDefinition ) ).setText( sEnglishDefinition );
-      ( (TextView) v.findViewById( R.id.partOfSpeech ) ).setText( sPartOfSpeech );
+         ( (TextView) v.findViewById( R.id.russianWord ) ).setText( sRussianWord );
+         ( (TextView) v.findViewById( R.id.englishDefinition ) ).setText( sEnglishDefinition );
+         ( (TextView) v.findViewById( R.id.partOfSpeech ) ).setText( sPartOfSpeech );
+      
+      } else {
+         showAllBlockedWarning( v, getActivity() );
+      }
       
       v.findViewById( R.id.imageViewBlock ).setOnClickListener( new OnClickListener() {
          
@@ -183,22 +174,28 @@ public class WordFragment extends Fragment {
    }
    
    public void onClickBlock( View v ) {
-      String wordToBlock = ( (TextView) getView().findViewById( R.id.russianWord ) ).getText().toString();
-      DatabaseHelper db = new DatabaseHelper( getActivity() );
-      if ( !db.wordBlocked( wordToBlock ) ) {
-         db.addBlockedWord( wordToBlock );
+      if ( mDatabaseHelper.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
+         return;
       }
-      db.close();
       
-      if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
-         showAllBlockedWarning( v, getActivity() );
+      String wordToBlock = ( (TextView) getView().findViewById( R.id.russianWord ) ).getText().toString();
+      if ( !mDatabaseHelper.wordBlocked( wordToBlock ) ) {
+         mDatabaseHelper.addBlockedWord( wordToBlock );
+      }
+      
+      if ( mDatabaseHelper.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
+         showAllBlockedWarning( getView(), getActivity() );
       } else {
          onClickRefresh( v );
       }
    }
    
    public void onClickRefresh ( View v ) {
-      updateWord( mIndexGenerator.nextInt( NUMBER_OF_WORDS ), getActivity() );
+      if ( mDatabaseHelper.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
+         return;
+      }
+      
+      attemptUpdateWord();
       ( (TextView) getView().findViewById( R.id.russianWord ) ).setText( sRussianWord );
       ( (TextView) getView().findViewById( R.id.englishDefinition ) ).setText( sEnglishDefinition );
       ( (TextView) getView().findViewById( R.id.partOfSpeech ) ).setText( sPartOfSpeech );
@@ -206,8 +203,35 @@ public class WordFragment extends Fragment {
    }
    
    public void onClickSearch( View v ) {
+      if ( mDatabaseHelper.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
+         return;
+      }
+      
       Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(BASE_WIKTIONARY_URL + sRussianWord ));
       browserIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
       getActivity().startActivity(browserIntent); 
+   }
+   
+   public void attemptUpdateWord() {
+      DatabaseHelper db = new DatabaseHelper( getActivity() );
+
+      if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
+         showAllBlockedWarning( getView(), getActivity() );
+         return;
+      } else {
+         ( (TextView) getActivity().findViewById( R.id.russianWord ) ).setTextColor( getResources().getColor( R.color.blue ) );
+         ( (TextView) getActivity().findViewById( R.id.englishDefinition ) ).setTextColor( getResources().getColor( R.color.blue ) );
+      
+      
+         int wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
+         
+         // Keep parsing the XML for a new word, until we get one that is not blocked.
+         do {
+            wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
+             
+            WordFragment.updateWord( wordNumber, getActivity() );
+         } while ( sRussianWord == "" || db.wordBlocked( sRussianWord ) );
+         db.close();
+      }
    }
 }
