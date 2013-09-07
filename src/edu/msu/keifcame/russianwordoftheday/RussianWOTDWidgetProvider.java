@@ -5,9 +5,11 @@ import java.util.Random;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.RemoteViews;
@@ -35,12 +37,8 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
             
            // Update text views
            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_layout);
-           
+           views.setTextViewText( R.id.russianWord, "AsDF" );
            updateViews( context, views, appWidgetId );
-           
-           views.setOnClickPendingIntent(R.id.imageViewRefresh, getPendingSelfIntent(context, REFRESH_CLICKED, appWidgetId));
-           views.setOnClickPendingIntent(R.id.imageViewBlock, getPendingSelfIntent(context, BLOCK_CLICKED, appWidgetId));
-           views.setOnClickPendingIntent(R.id.imageViewSearch, getPendingSelfIntent(context, SEARCH_CLICKED, appWidgetId));
            
            // Tell the AppWidgetManager to perform an update on the current app widget
            appWidgetManager.updateAppWidget(appWidgetId, views);
@@ -76,6 +74,19 @@ public class RussianWOTDWidgetProvider extends AppWidgetProvider {
                  mRussianWord   = WordFragment.getRussianWord();
                  mDefinition    = WordFragment.getEnglishDefinition();
                  mPartsOfSpeech = WordFragment.getPartOfSpeech();
+                 
+                 // If WordFragment gave us nothing, look up the most recent word.
+                 if ( mRussianWord == "" || mDefinition == "" || mPartsOfSpeech == "" || 
+                      mRussianWord == null || mDefinition == null || mPartsOfSpeech == null ) {
+                    Cursor recentCursor = db.getMostRecentWordCursor();
+                    recentCursor.moveToFirst();
+                    
+                    mRussianWord   = recentCursor.getString( 1 );
+                    mDefinition    = recentCursor.getString( 2 );
+                    mPartsOfSpeech = recentCursor.getString( 3 );
+                    
+                    recentCursor.close();
+                 }
               } while ( mRussianWord == "" || db.wordBlocked( mRussianWord ) );
               
               db.close();

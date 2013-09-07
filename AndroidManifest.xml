@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         
-        <receiver
+        <!--<receiver
 	       android:icon="@drawable/ic_launcher"
 	       android:label="Russian Word of the Day"
 	       android:name="RussianWOTDWidgetProvider" >
@@ -34,7 +34,7 @@
 	       <meta-data
 	          android:name="android.appwidget.provider"
 	          android:resource="@xml/widget_info" />
-		</receiver> 
+		</receiver> -->
     </application>
 
 </manifest>

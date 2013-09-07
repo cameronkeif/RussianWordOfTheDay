@@ -47,7 +47,7 @@ public class WordFragment extends Fragment {
       View v = inflater.inflate( R.layout.word_fragment, null );
       
       SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences( getActivity() );
-      
+
       sRussianWord = preferences.getString( RUSSIAN_WORD, "");
       sEnglishDefinition = preferences.getString( ENGLISH_DEFINITION, "" );
       sPartOfSpeech = preferences.getString( PART_OF_SPEECH, "" );
