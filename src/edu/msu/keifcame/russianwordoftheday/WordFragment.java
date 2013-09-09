@@ -56,9 +56,9 @@ public class WordFragment extends Fragment {
       
       long lastUpdatedTime = preferences.getLong( LAST_UPDATED_TIME, 0 );
       long currentTime = System.currentTimeMillis();
-      if ( currentTime - lastUpdatedTime >= 86400000 ) {
-         // update
-         attemptUpdateWord();
+      
+      if ( currentTime - lastUpdatedTime >= 7200000 ) { // Update every 12 hours
+         attemptUpdateWord( v );
       }
 
       if ( mDatabaseHelper.getNumberOfBlockedWords() < NUMBER_OF_WORDS ) {
