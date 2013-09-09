@@ -195,7 +195,7 @@ public class WordFragment extends Fragment {
          return;
       }
       
-      attemptUpdateWord();
+      attemptUpdateWord( getView() );
       ( (TextView) getView().findViewById( R.id.russianWord ) ).setText( sRussianWord );
       ( (TextView) getView().findViewById( R.id.englishDefinition ) ).setText( sEnglishDefinition );
       ( (TextView) getView().findViewById( R.id.partOfSpeech ) ).setText( sPartOfSpeech );
@@ -212,15 +212,15 @@ public class WordFragment extends Fragment {
       getActivity().startActivity(browserIntent); 
    }
    
-   public void attemptUpdateWord() {
+   public void attemptUpdateWord( View v ) {
       DatabaseHelper db = new DatabaseHelper( getActivity() );
 
       if ( db.getNumberOfBlockedWords() >= NUMBER_OF_WORDS ) {
          showAllBlockedWarning( getView(), getActivity() );
          return;
       } else {
-         ( (TextView) getActivity().findViewById( R.id.russianWord ) ).setTextColor( getResources().getColor( R.color.blue ) );
-         ( (TextView) getActivity().findViewById( R.id.englishDefinition ) ).setTextColor( getResources().getColor( R.color.blue ) );
+         ( (TextView) v.findViewById( R.id.russianWord ) ).setTextColor( getResources().getColor( R.color.blue ) );
+         ( (TextView) v.findViewById( R.id.englishDefinition ) ).setTextColor( getResources().getColor( R.color.blue ) );
       
       
          int wordNumber = mIndexGenerator.nextInt( NUMBER_OF_WORDS );
