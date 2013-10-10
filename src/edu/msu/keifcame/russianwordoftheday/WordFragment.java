@@ -17,6 +17,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -92,6 +93,14 @@ public class WordFragment extends Fragment {
          @Override
          public void onClick( View v ) {
             onClickRefresh( v );
+         }
+      } );
+      
+      v.findViewById( R.id.imageViewFavorite ).setOnClickListener( new OnClickListener() {
+         
+         @Override
+         public void onClick( View v ) {
+            onClickFavorite( v );
          }
       } );
       return v;
@@ -188,6 +197,18 @@ public class WordFragment extends Fragment {
       } else {
          onClickRefresh( v );
       }
+   }
+   
+   public void onClickFavorite( View v ) {
+      String wordToFavorite = ( (TextView) getView().findViewById( R.id.russianWord ) ).getText().toString();
+      String definition     = ( (TextView) getView().findViewById( R.id.englishDefinition ) ).getText().toString();
+      String partOfSpeech   = ( (TextView) getView().findViewById( R.id.partOfSpeech ) ).getText().toString();
+      
+      if ( !mDatabaseHelper.wordFavorited( wordToFavorite ) ) {
+         mDatabaseHelper.addFavoriteWord( wordToFavorite, definition, partOfSpeech );
+         Log.d( "GOOD", wordToFavorite + " added" );
+      }
+      
    }
    
    public void onClickRefresh ( View v ) {

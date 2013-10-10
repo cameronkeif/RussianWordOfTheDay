@@ -30,37 +30,51 @@
         android:textColor="@color/blue"
         android:textAppearance="?android:attr/textAppearanceLarge" />
     
-    <ImageButton
-        android:id="@+id/imageViewSearch"
-        android:layout_width="wrap_content"
-        android:background="@null"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:contentDescription="@string/search_content_description"
-        android:padding="5dp"
-        android:src="@drawable/search" />
-
-    <ImageButton
-        android:id="@+id/imageViewBlock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:padding="5dp"
-        android:contentDescription="@string/blocked_content_description"
-        android:src="@drawable/block" />
-
-    <ImageButton
-        android:id="@+id/imageViewRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@null"
-        android:padding="5dp"
-        android:contentDescription="@string/refresh_content_description"
-        android:src="@drawable/refresh" />
-
+	    android:layout_alignParentRight="true"
+	    android:orientation="horizontal">
+	    
+		    <ImageButton
+		        android:id="@+id/imageViewBlock"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:background="@null"
+		        android:padding="5dp"
+		        android:layout_weight="1"
+		        android:contentDescription="@string/blocked_content_description"
+		        android:src="@drawable/block" />
+		    
+		    <ImageButton
+		        android:id="@+id/imageViewFavorite"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:background="@null"
+		        android:layout_weight="1"
+		        android:padding="5dp"
+		        android:contentDescription="@string/blocked_content_description"
+		        android:src="@drawable/favorite" />
+		
+		    <ImageButton
+		        android:id="@+id/imageViewRefresh"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:background="@null"
+		        android:padding="5dp"
+		        android:layout_weight="1"
+		        android:contentDescription="@string/refresh_content_description"
+		        android:src="@drawable/refresh" />
+		    
+		    <ImageButton
+		        android:id="@+id/imageViewSearch"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:background="@null"
+		        android:layout_height="wrap_content"
+		        android:contentDescription="@string/search_content_description"
+		        android:padding="5dp"
+		        android:src="@drawable/search" />
+	</LinearLayout>
 </RelativeLayout>

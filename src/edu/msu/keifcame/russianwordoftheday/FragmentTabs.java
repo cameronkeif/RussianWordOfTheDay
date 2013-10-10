@@ -24,6 +24,8 @@ public class FragmentTabs extends FragmentActivity {
             BlockedWordsFragment.class, null);
       mTabHost.addTab(mTabHost.newTabSpec("Recent").setIndicator("Recent"),
             RecentWordsFragment.class, null);
+      mTabHost.addTab(mTabHost.newTabSpec("Favorite").setIndicator("Favorite"),
+            RecentWordsFragment.class, null);
       
       for ( int i = 0; i < mTabHost.getTabWidget().getChildCount(); i++) {
          mTabHost.getTabWidget().getChildAt( i ).setBackgroundDrawable( getResources().getDrawable( R.drawable.tab_selector ) );

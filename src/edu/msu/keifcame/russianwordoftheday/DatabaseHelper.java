@@ -17,6 +17,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
    public static final String COLUMN_DEFINITION     = "Defintion";
    public static final String COLUMN_PART_OF_SPEECH = "PartOfSpeech";
    
+   public static final String TABLE_NAME_FAVORITE   = "FavoriteWords";
+   
    public static final int     BLOCKED_WORD_INDEX = 1;
    public DatabaseHelper( Context context) {
       super( context, DATABASE_NAME, null, 33 );
@@ -31,6 +33,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
       }
       try {
          db.execSQL( "CREATE TABLE " + TABLE_NAME_RECENT + " (" + COLUMN_ID + " INT PRIMARY KEY, "+ COLUMN_WORDS + " VARCHAR, " +
+                     COLUMN_DEFINITION + " VARCHAR, " +
+                     COLUMN_PART_OF_SPEECH + " VARCHAR);" );
+      } catch ( Exception e ) {
+         e.printStackTrace();
+      }
+      try {
+         db.execSQL( "CREATE TABLE " + TABLE_NAME_FAVORITE + " (" + COLUMN_ID + " INT PRIMARY KEY, "+ COLUMN_WORDS + " VARCHAR, " +
                      COLUMN_DEFINITION + " VARCHAR, " +
                      COLUMN_PART_OF_SPEECH + " VARCHAR);" );
       } catch ( Exception e ) {
@@ -68,10 +77,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
       db.close();
    }
    
+   public void addFavoriteWord( String word, String definition, String partOfSpeech ) {
+      SQLiteDatabase db = this.getWritableDatabase();
+   
+      ContentValues values = new ContentValues();
+      values.put( COLUMN_WORDS, word );
+      values.put( COLUMN_DEFINITION, definition );
+      values.put( COLUMN_PART_OF_SPEECH, partOfSpeech );
+   
+      // Inserting Row
+      db.insert(TABLE_NAME_FAVORITE, null, values);
+      db.close();
+   }
+   
    public boolean wordBlocked( String word ) {
       SQLiteDatabase db = this.getReadableDatabase();
       
       Cursor cursor = db.rawQuery("select * from " + TABLE_NAME_BLOCKED + " where " + COLUMN_WORDS + " = ?", new String[] { word }); 
+      return cursor.getCount() > 0;
+   }
+   
+   public boolean wordFavorited( String word ) {
+      SQLiteDatabase db = this.getReadableDatabase();
+      
+      Cursor cursor = db.rawQuery("select * from " + TABLE_NAME_FAVORITE + " where " + COLUMN_WORDS + " = ?", new String[] { word }); 
       return cursor.getCount() > 0;
    }
    
