@@ -120,6 +120,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
       return db.rawQuery("select * from " + TABLE_NAME_RECENT + " order by " + COLUMN_ID + " desc limit 100", null ); 
    }
    
+   public Cursor getFavoriteWordsCursor() {
+      SQLiteDatabase db = this.getReadableDatabase();
+      
+      return db.rawQuery("select * from " + TABLE_NAME_RECENT + " order by " + COLUMN_ID + " desc limit 100", null ); 
+   }
+   
    public Cursor getMostRecentWordCursor() {
       SQLiteDatabase db = this.getReadableDatabase();
       
